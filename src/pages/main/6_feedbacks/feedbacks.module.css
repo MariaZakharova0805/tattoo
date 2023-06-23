@@ -25,5 +25,6 @@
 @media (min-width:1600px) {
     .feedbacks {
         margin-bottom: 336px;
+        margin-top: -320px;
     }
 }
