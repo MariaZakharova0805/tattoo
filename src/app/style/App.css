@@ -87,6 +87,7 @@ html {
     border-bottom: 1.5px solid var(--grey-light);
     width: 40px;
     transition: 0.5s;
+    /* text */
 }
 
 .burger:hover .burger_line1,
