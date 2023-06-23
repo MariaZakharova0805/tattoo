@@ -1,0 +1,58 @@
+.navbar {
+    width: 100%;
+    background-color: var(--bg-color);
+    margin-top: -32px;
+    color: var(--grey-light);
+}
+
+.navbar_container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.item {
+    width: fit-content;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67.2px;
+    font-family: "Impact", Arial, sans-serif;
+}
+
+.link_active,
+.link {
+    transition: 0.5s;
+    margin-bottom: 48px;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+.link_active,
+.link:hover {
+    color: var(--main-color-2);
+}
+
+.link {
+    color: var(--light-grey);
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-color-2);
+    content: "";
+    transition: width 0.5s ease-out;
+}
+
+.link:hover:after,
+.link:focus:after {
+    width: 100%;
+}

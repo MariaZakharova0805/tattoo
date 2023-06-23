@@ -1,0 +1,55 @@
+.block {
+    height: 240px;
+    transform: skew(-2deg);
+}
+
+.tape {
+    display: flex;
+    align-items: center;
+    height: 51px;
+    transform: rotate(-10deg);
+    background-color: var(--gray-dark);
+    color: var(--grey-midlde);
+    width: 3000px;
+    margin-left: -40px;
+}
+
+.triange,
+.work,
+.review {
+    margin-right: 20px;
+    transform: skew(2deg);
+    color: var(--bg-color);
+}
+
+.triange {
+    max-width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top: 5px solid var(--bg-color);
+}
+
+.work {
+    font-size: 36px;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-family: Impact;
+}
+
+.review {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+
+.review:last-child {
+    margin-right: 0;
+}
+
+@media (min-width:768px) {
+    .tape {
+        height: 64px;
+    }
+}

@@ -1,0 +1,117 @@
+.block {
+    margin-bottom: 152px;
+}
+
+.block_header {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(3deg);
+    overflow: hidden;
+    margin-left: -25%;
+    margin-bottom: 30px;
+}
+
+.block_header__img1,
+.block_header__img3,
+.block_header__img5,
+.block_header__img7 {
+    width: 145px;
+    margin-right: 16px;
+}
+
+.block_header__img2,
+.block_header__img4,
+.block_header__img6 {
+    width: 86px;
+    margin-right: 16px;
+}
+
+.block_header img:last-child {
+    margin: 0;
+}
+
+.block_text {
+    background: right top / contain no-repeat url('../../../../public/main/piercing_bg.jpg');
+    padding-top: 120px;
+    z-index: 2;
+    position: relative;
+}
+
+.block_footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .block {
+        margin-bottom: 208px;
+    }
+
+    .block_footer {
+        margin-top: 56px;
+    }
+
+    .block_header__img1,
+    .block_header__img3,
+    .block_header__img5,
+    .block_header__img7 {
+        width: 212px;
+        margin-right: 51px;
+    }
+
+    .block_header__img2,
+    .block_header__img4,
+    .block_header__img6 {
+        width: 146.51px;
+        margin-right: 51px;
+    }
+
+    .block_text {
+        width: 90%;
+        background-size: 70%;
+        background-position: right top;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    .block_texts {
+        width: 60%;
+        margin-right: 40%;
+        padding-top: 30%;
+    }
+}
+
+@media (min-width: 1278px) {
+
+    .block_header__img1,
+    .block_header__img3,
+    .block_header__img5,
+    .block_header__img7 {
+        width: 287px;
+        margin-right: 148px;
+    }
+
+    .block_header__img2,
+    .block_header__img4,
+    .block_header__img6 {
+        width: 203px;
+        margin-right: 148px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .block {
+        margin-bottom: 168px;
+    }
+
+    .block_texts {
+        padding-top: 35%;
+    }
+
+    .block_footer {
+        margin-top: 64px;
+    }
+}

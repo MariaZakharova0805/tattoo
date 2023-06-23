@@ -1,0 +1,66 @@
+.navbar {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 396px;
+        color: var(--grey-light);
+    }
+
+    .item {
+        font-family: Hind-Vadodara;
+        text-transform: none;
+        width: fit-content;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 67.2px;
+        font-size: 18px;
+        line-height: 26.96px;
+    }
+
+    .link_active,
+    .link {
+        transition: 0.5s;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-family: inherit;
+    }
+
+    .link_active,
+    .link:hover {
+        color: var(--main-color-2);
+    }
+
+    .link {
+        width: fit-content;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .link:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--main-color-2);
+        content: "";
+        transition: width 0.5s ease-out;
+    }
+
+    .link:hover:after,
+    .link:focus:after {
+        width: 100%;
+    }
+}
+
+@media (min-width:1600px) {
+    .navbar {
+        width: 684px;
+    }
+}
