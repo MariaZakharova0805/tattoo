@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './app/App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Normalize } from 'styled-normalize'
 import { Error } from './pages/error';
 import { Main } from './pages/main'
 import { Artists } from './pages/artists'
@@ -42,7 +41,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Normalize />
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
