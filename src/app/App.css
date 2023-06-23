@@ -1,5 +1,5 @@
-@import "./vars.css";
-@import "./nullstyle.css";
+@import "./style/vars.css";
+@import "./style/nullstyle.css";
 
 body,
 html {
