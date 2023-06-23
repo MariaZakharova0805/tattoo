@@ -9,7 +9,9 @@ import { NavbarDropDown } from '../widgets/navbar-drop-down/navbar-drop-down';
 import { NavbarHeader } from '../widgets/navbar-header/navbar-header';
 import logo from '../../public/svg/logo.svg'
 
+
 type Anchor = 'top';
+
 
 function App() {
   const [state, setState] = React.useState({
@@ -41,6 +43,7 @@ function App() {
   );
 
   return (
+
     <div>
       <React.Fragment key={'top'}>
         <Drawer
@@ -62,6 +65,8 @@ function App() {
         </div>
       </React.Fragment>
     </div>
+
   );
 }
 export default App
+
