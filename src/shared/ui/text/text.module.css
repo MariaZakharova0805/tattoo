@@ -31,11 +31,65 @@
     color: var(--main-color-2);
 }
 
+.block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 48px;
+    font-family: Impact;
+    line-height: 140%;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin: 47px auto 0;
+}
+
+.noise {
+    height: 40px;
+    width: 589px;
+    margin: -68px auto 0;
+    background:url('../../../../public/noise.png')
+}
+
+.h2 {
+    font-size: 36px;
+    font-family: Impact;
+    line-height: 140%;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.shadow {
+    height: 36px;
+    width: 334px;
+    margin: -42px auto 0;
+}
+
 @media (min-width:768px) {
+
     .h3_red,
     .h3_white {
         font-size: 36px;
         line-height: 50.4px;
+    }
+
+    .h1 {
+        font-size: 96px;
+        margin-top: 160px;
+    }
+
+    .noise {
+        max-height: 40px;
+        width: 589px;
+        margin: -109px auto 0;
     }
 
 }
@@ -52,6 +106,20 @@
     .h3_white {
         font-size: 48px;
         line-height: 67.2px;
+    }
+
+    .h1 {
+        font-size: 184px;
+    }
+
+    .h2 {
+        font-size: 96px;
+        margin-top: 92px;
+    }
+
+    .shadow {
+        height: 96px;
+        margin: -96px auto 0;
     }
 
 }

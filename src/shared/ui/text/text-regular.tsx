@@ -2,7 +2,7 @@ import { FC } from 'react'
 import c from "./text.module.css"
 
 type TextProps = {
-    children: string,
+    children: any,
     color?: 'grey' | 'white',
 }
 

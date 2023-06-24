@@ -1,7 +1,7 @@
 import c from './bottom.module.css'
 import { Container } from "../../../shared/ui/container/container"
 import { ButtonArrow } from '../../../shared/ui/button'
-import { Header_H3 } from '../../../shared/ui/text/header_h3'
+import { Header_H3 } from '../../../shared/ui/text/text-h3'
 export const Bottom = () => {
   return (
     <Container>

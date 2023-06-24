@@ -1,6 +1,6 @@
 import c from './about.module.css'
 import { Container } from "../../../shared/ui/container/container"
-import { Header_H3 } from "../../../shared/ui/text/header_h3"
+import { Header_H3 } from "../../../shared/ui/text/text-h3"
 import { TextRegular } from "../../../shared/ui/text/text-regular"
 import opened from "../../../../public/main/opened.svg"
 import part3_img from "../../../../public/main/part3_img.jpg"

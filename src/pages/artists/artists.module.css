@@ -1,0 +1,23 @@
+.top_h1 {
+    width: 100%;
+    max-width: 310px;
+    margin: 47px auto 0;
+}
+
+.top_triangle {
+    margin: 0 auto;
+    margin-bottom: 160px;
+}
+@media (min-width: 768px) {
+    .top_h1 {
+        max-width: 589px;
+        margin-top: 160px;
+    }
+
+}
+@media (min-width: 1600px) {
+    .top_h1 {
+        max-width: 1147px;
+    }
+
+}

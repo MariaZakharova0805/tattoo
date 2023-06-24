@@ -8,6 +8,7 @@ import { Artists } from './pages/artists'
 import { Gallery } from './pages/gallery'
 import { Appointment } from './pages/appointment'
 import { Contact } from './pages/contact'
+import { Member } from './pages/member';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/artists/:name",
+        element: <Member />,
       },
     ],
   },

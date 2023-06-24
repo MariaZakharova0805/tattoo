@@ -7,9 +7,8 @@ import { Outlet } from "react-router-dom";
 import { Footer } from '../widgets/footer';
 import { NavbarDropDown } from '../widgets/navbar-drop-down/navbar-drop-down';
 import { NavbarHeader } from '../widgets/navbar-header/navbar-header';
-import logo from '../../public/svg/logo.svg'
-
-
+import { Burger } from '../entities/burger';
+import { Logo } from '../entities/logo';
 type Anchor = 'top';
 
 
@@ -56,9 +55,9 @@ function App() {
         <div className='App'>
           <ScrollToTop />
           <div className='header'>
-            <img src={logo} className='logo' />
+            <Logo/>
             <NavbarHeader />
-            <div onClick={toggleDrawer('top', true)} className='burger'><div className='burger_line1'></div><div className='burger_line2'></div></div>
+            <Burger onClick={toggleDrawer('top', true)} />
           </div>
           <div className='App_content'><Outlet /></div>
           <Footer />
