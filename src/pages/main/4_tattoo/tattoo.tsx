@@ -28,8 +28,7 @@ export const Tattoo = () => {
             <ButtonArrow href="./gallery">see gallary</ButtonArrow>
             <ButtonArrow href="./appointment">book</ButtonArrow>
           </div>
-          </div>
-         
+          </div>         
         </Container>
       </div>
     </div>
