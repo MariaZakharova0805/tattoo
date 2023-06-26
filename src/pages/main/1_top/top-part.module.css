@@ -3,10 +3,17 @@
     max-width: 310px;
     margin: 47px auto 0;
 }
+
 .top_h3 {
+    color: var(--main-color-2);
     text-align: center;
     margin-bottom: 24px;
+    font-size: 24px;
+    font-family: Impact;
+    line-height: 140%;
+    text-transform: uppercase;
 }
+
 .top_text {
     font-size: 16px;
     line-height: 20.8px;
@@ -17,18 +24,23 @@
     width: 60%;
     margin: 0 auto 24px;
 }
+
 .top_triangle {
     margin: 0 auto;
     margin-bottom: 160px;
 }
+
 @media (min-width: 768px) {
     .top_h1 {
         max-width: 589px;
         margin-top: 160px;
     }
+
     .top_h3 {
+        font-size: 36px; 
         margin-bottom: 40px;
     }
+
     .top_text {
         font-size: 18px;
         line-height: 26.96px;
@@ -36,13 +48,17 @@
         margin-bottom: 104px;
     }
 }
+
 @media (min-width: 1600px) {
     .top_h1 {
         max-width: 1147px;
     }
+
     .top_h3 {
+        font-size: 48 px; 
         margin-bottom: 40px;
     }
+
     .top_text {
         font-size: 22px;
         line-height: 30.8px;

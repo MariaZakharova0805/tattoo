@@ -1,0 +1,41 @@
+.section {
+    width: 100vw;
+    position: relative;
+}
+
+.section * {
+    position: relative;
+}
+
+.text {
+    margin-bottom: 69px;
+}
+
+.text h4 {
+    margin-bottom: 10px;
+}
+
+.tape {
+    margin-top: -400px;
+    margin-bottom: 384px;
+}
+
+.question,
+.img {
+    margin-bottom: 168px;
+}
+
+@media (min-width:1200px) {
+    .tape {
+        margin-top: -200px;
+    }
+}
+
+@media (min-width:1600px) {
+    .tape {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+
+}

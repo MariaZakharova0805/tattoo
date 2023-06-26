@@ -1,0 +1,14 @@
+.section {
+    width: 100vw;
+    position: relative;
+}
+
+.section * {
+    position: relative;
+}
+
+@media (min-width:1600px) {
+    .tape {
+        margin-top: 164px;
+    }
+}

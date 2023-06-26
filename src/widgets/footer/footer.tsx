@@ -1,6 +1,7 @@
 import c from "./footer.module.css"
 import { FooterLinks, FooterText, useFooter } from "../../shared/store"
 import { Container } from "../../shared/ui/container/container";
+import { Link } from "../../shared/ui/link/link";
 
 export const Footer = () => {
   const { footerLinks, footerText } = useFooter((state) => state);
@@ -10,8 +11,8 @@ export const Footer = () => {
         <div className={c.footer_links}>{footerLinks.map((link: FooterLinks) => {
           return (
             <div key={link.id} className={link.text1 === 'Instagram' ? c.instaram : c.footer_links_item}>
-              <p className={c.link_box}><a href={link.link1} target="_blank">{link.text1}</a></p>
-              <p className={c.link_box}><a href={link.link2} target="_blank">{link.text2}</a></p>
+              <Link href={link.link1}>{link.text1}</Link>
+              <Link href={link.link2} >{link.text2}</Link>
             </div>
           )
         })}</div>

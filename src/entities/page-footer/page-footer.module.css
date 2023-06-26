@@ -1,0 +1,22 @@
+.block {
+    margin-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block h4 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.block h3 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+@media (min-width: 1600px) {
+    .block {
+        margin-bottom: 170px;
+    }
+}

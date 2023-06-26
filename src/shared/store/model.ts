@@ -47,3 +47,9 @@ export interface IMember {
     facebook?: string,
     potfolio?: IPorfolio[]
 }
+
+export interface IQuestion {
+    id: string,
+    header: string,
+    text: string,
+}
