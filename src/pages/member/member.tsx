@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import c from "./member.module.css"
 import { TextRegular } from '../../shared/ui/text/text-regular';
 import { useMembers } from '../../shared/store';
+import { Header_H2 } from "../../shared/ui/text/text-h2"
 
 export const Member = () => {
     const { name } = useParams();
@@ -11,7 +12,13 @@ export const Member = () => {
             {members.map(member => {
                 if (member.name === name) {
                     return (
-                        <TextRegular>{member.name}</TextRegular>
+                        <div>
+                            <Header_H2 src={member.header} 
+                            alt={"tatto by" + member.name} />
+                            <TextRegular>{member.name}
+                            </TextRegular>
+                        </div>
+
                     )
                 }
             })}
@@ -19,3 +26,10 @@ export const Member = () => {
         </div>
     )
 }
+
+
+
+
+
+
+

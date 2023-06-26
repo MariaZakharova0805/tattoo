@@ -1,29 +1,14 @@
-.h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 48px;
-    font-family: Impact;
-    line-height: 140%;
-    letter-spacing: 1.44px;
-    text-transform: uppercase;
-    margin: 47px auto 0;
-    background: url('../../../../public/bg_noise.png') repeat center center;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+.h1_img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
-.h2 {
-    font-size: 36px;
-    font-family: Impact;
-    line-height: 140%;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 40px;
-    background: url('../../../../public/bg_noise.png') repeat center center;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+
+.h2_img {
+    width: 100%;
+    max-height: 50px;
+    width: auto;
+    margin: 0 auto 14px;
 }
 
 .text_regular,
@@ -61,16 +46,15 @@
 
 
 
-
-
 @media (min-width:768px) {
-    .h1 {
-        font-size: 96px;
-        margin-top: 160px;
+    .h1_img {
+        max-width: 589px;
     }
-    .h2 {
-        font-size: 66px;
+
+    .h2_img {
+        max-height: 90px;
     }
+
     .h3_red,
     .h3_white {
         font-size: 36px;
@@ -79,13 +63,15 @@
 }
 
 @media (min-width:1600px) {
-    .h1 {
-        font-size: 184px;
+    .h1_img {
+        max-width: 1148px;
     }
-    .h2 {
-        font-size: 96px;
-        margin-top: 92px;
+
+    .h2_img {
+        max-height: 134px;
+        margin: 0 auto 54px;
     }
+
 
     .text_regular,
     .text_regular_grey {

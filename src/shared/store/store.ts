@@ -13,18 +13,24 @@ import feedback_img3 from "../../../public/main/feedback_img3.jpg"
 import feedback_img1_sm from "../../../public/main/feedback_img1_sm.jpg"
 import feedback_img2_sm from "../../../public/main/feedback_img2_sm.jpg"
 import feedback_img3_sm from "../../../public/main/feedback_img3_sm.jpg"
+// Mike +
 import member_mike from "../../../public/artists/mike.jpg"
+import mike_header from '../../../public/h2_mike.svg'
 import mike_img1 from "../../../public/artists/mike_img1.jpg"
 import mike_img2 from "../../../public/artists/mike_img2.jpg"
 import mike_img3 from "../../../public/artists/mike_img3.jpg"
 import member_craig from "../../../public/artists/craig.jpg"
+// Craig +
+import craig_header from '../../../public/h2_craig.svg'
 import craig_img1 from "../../../public/artists/craig_img1.jpg"
 import craig_img2 from "../../../public/artists/craig_img2.jpg"
 import craig_img3 from "../../../public/artists/craig_img3.jpg"
 import craig_img4 from "../../../public/artists/craig_img4.jpg"
 import craig_img5 from "../../../public/artists/craig_img5.jpg"
 import craig_img6 from "../../../public/artists/craig_img6.jpg"
+//Jackie
 import member_jackie from "../../../public/artists/jackie.jpg"
+import jackie_header from '../../../public/h2_jackie.svg'
 import jackie_img1 from "../../../public/artists/jackie_img1.jpg"
 import jackie_img2 from "../../../public/artists/jackie_img2.jpg"
 import jackie_img3 from "../../../public/artists/jackie_img3.jpg"
@@ -32,12 +38,15 @@ import jackie_img4 from "../../../public/artists/jackie_img4.jpg"
 import jackie_img5 from "../../../public/artists/jackie_img5.jpg"
 import jackie_img6 from "../../../public/artists/jackie_img6.jpg"
 import member_lucky from "../../../public/artists/lucky.jpg"
+//Lucky - переделать макет
+import lucky_header from '../../../public/h2_lucky.svg'
 import lucky_img1 from "../../../public/artists/lucky_img1.jpg"
 import lucky_img2 from "../../../public/artists/lucky_img2.jpg"
 import lucky_img3 from "../../../public/artists/lucky_img3.jpg"
 import lucky_img4 from "../../../public/artists/lucky_img4.jpg"
 import lucky_img5 from "../../../public/artists/lucky_img5.jpg"
 import lucky_img6 from "../../../public/artists/lucky_img6.jpg"
+//Josh
 import member_josh from "../../../public/artists/josh.jpg"
 import team from '../../../public/artists/team.jpg'
 
@@ -49,6 +58,7 @@ export const useNavbar = create<NavBar>(() => ({
         { id: nanoid(), href: '/', text: 'Home' },
         { id: nanoid(), href: '/artists', text: 'Artists' },
         { id: nanoid(), href: '/gallery', text: 'Gallery' },
+        { id: nanoid(), href: '/faq', text: 'Faq' },
         { id: nanoid(), href: '/appointment', text: 'Appointment' },
         { id: nanoid(), href: '/contact', text: 'Contact' },
     ]
@@ -110,6 +120,7 @@ export const useMembers = create<useMembers>(() => ({
             id: nanoid(),
             src: member_mike,
             srcSM: member_mike,
+            header: mike_header,
             name: 'Mike',
             job: 'tattoo',
             style: [{ id: nanoid(), text: 'Black & Gray' }, { id: nanoid(), text: 'and large-scale storytelling' }],
@@ -132,6 +143,7 @@ export const useMembers = create<useMembers>(() => ({
             src: member_craig,
             srcSM: member_craig,
             name: 'Craig',
+            header: craig_header,
             job: 'tattoo',
             style: [{ id: nanoid(), text: 'New school ' }, { id: nanoid(), text: 'and Neo-traditional' }],
             texts: [
@@ -157,6 +169,7 @@ export const useMembers = create<useMembers>(() => ({
             src: member_lucky,
             srcSM: member_lucky,
             name: 'Jackie',
+            header: jackie_header,
             job: 'Piercing',
             style: [{ id: nanoid(), text: 'All types of piercings: Eye Dermals, septum, bridge, webbing of tongue, webbing on hands' }],
             texts: [
@@ -180,6 +193,7 @@ export const useMembers = create<useMembers>(() => ({
             src: member_jackie,
             srcSM: member_jackie,
             name: 'Lucky',
+            header: lucky_header,
             job: 'Tattoo',
             style: [{ id: nanoid(), text: 'Black & Gray, traditional and Japanese' }],
             texts: [

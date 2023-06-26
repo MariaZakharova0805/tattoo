@@ -6,6 +6,7 @@ import { Error } from './pages/error';
 import { Main } from './pages/main'
 import { Artists } from './pages/artists'
 import { Gallery } from './pages/gallery'
+import { Faq } from './pages/faq';
 import { Appointment } from './pages/appointment'
 import { Contact } from './pages/contact'
 import { Member } from './pages/member';
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery />,
+      },
+      {
+        path: "/faq",
+        element: <Faq/>,
       },
       {
         path: "/appointment",

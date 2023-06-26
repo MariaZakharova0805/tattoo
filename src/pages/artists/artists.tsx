@@ -2,16 +2,17 @@
 import { useMembers } from "../../shared/store"
 import { Artist } from "../../entities/artist"
 import { Container } from "../../shared/ui/container/container"
-// import h1 from '../../../public/artists/h1.svg'
+import h2 from '../../../public/h2_artists.svg'
 import { Header_H2 } from '../../shared/ui/text/text-h2'
-export const Artists = () => {
+import { Header_H3 } from '../../shared/ui/text/text-h3'
 
+export const Artists = () => {
   const members = useMembers(state => state.members)
   return (
     <div>
       <Container>
-      <Header_H2>Artists</Header_H2>
-
+      <Header_H2 src={h2} alt="artists"/>
+      <Header_H3>GET TATTOOED AND PIERCED BY PROFESSIONAL ARTISTS</Header_H3>
         {members.map(member => {
           return <Artist member={member} key={member.id} />
         })}

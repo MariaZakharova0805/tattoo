@@ -39,6 +39,7 @@ export interface IMember {
     src: string,
     srcSM: string,
     name: string,
+    header?:string,
     job?: string,
     style: IPorfolio[],
     texts?: IPorfolio[],

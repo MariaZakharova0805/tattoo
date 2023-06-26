@@ -1,11 +1,12 @@
 import { FC } from 'react'
 import c from "./text.module.css"
 type Header_H2_Props = {
-    children: string,
+    src: string | undefined,
+    alt: string,
 }
 
-export const Header_H2: FC<Header_H2_Props> = ({ children }) => {
+export const Header_H2: FC<Header_H2_Props> = ({ src, alt }) => {
     return (
-        <h2 className={c.h2}>{children}</h2>
+        <img src={src} alt={alt} className={c.h2_img} />
     )
 }
