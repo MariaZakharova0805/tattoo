@@ -37,7 +37,6 @@
     line-height: 33.6px;
     color: var(--grey-light);
     text-transform: uppercase;
-    white-space: nowrap;
 }
 
 .h3_red {
