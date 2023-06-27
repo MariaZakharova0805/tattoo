@@ -1,5 +1,6 @@
 import c from './faq.module.css'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Header_H2 } from "../../shared/ui/text/text-h2"
 import h2 from '../../../public/faq/h2_faq.svg'
 import img from '../../../public/faq/img.jpg'
@@ -11,9 +12,7 @@ import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Container } from '../../shared/ui/container/container'
 import { useFaq } from '../../shared/store'
 import { DropDownItem } from '../../entities/drop-down-item'
-
 export const Faq = () => {
-
   const questions = useFaq(state => state.questions)
   return (
     <section className={c.section}>
@@ -32,12 +31,18 @@ export const Faq = () => {
           })}
         </div>
       </Container>
-      <LazyLoadImage src={img} placeholderSrc={img_lazy} effect="blur" alt='frequently asked questions' className={c.img}/>
+      <LazyLoadImage
+        alt="tatto"
+        effect="blur"
+        src={img}
+        visibleByDefault={img === '../../../public/faq/img_lazy.jpg'}
+        placeholderSrc={img_lazy}
+        className={c.img}
+      />
       <PageBottom />
     </section>
   )
 }
-
 
 
 

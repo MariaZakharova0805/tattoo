@@ -1,7 +1,10 @@
 import c from './contact.module.css'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Header_H2 } from "../../shared/ui/text/text-h2"
 import h2 from '../../../public/contact/h2_contacts.svg'
 import map from '../../../public/contact/Map.jpg'
+import map_lazy from '../../../public/contact/MapSM.jpg'
 import { PageBottom } from "../../entities/page-footer/page-footer"
 import { Container } from '../../shared/ui/container/container'
 import { useFooter } from '../../shared/store'
@@ -9,10 +12,10 @@ import { Link } from '../../shared/ui/link/link'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Header_H3 } from '../../shared/ui/text/text-h3'
 
-const appStyle = {
-  width: '100%',
-  overflow: 'scroll',
-};
+// const appStyle = {
+//   width: '100vw',
+//   overflow: 'scroll',
+// };
 
 const handleOnWheel = () => {
   console.log('onWheel: scrolling the list...');
@@ -22,8 +25,6 @@ const handleOnWheel = () => {
 export const Contact = () => {
   const links = useFooter(state => state.footerLinks)
   return (
-
-
     <section className={c.section}>
       <Container>
         <Header_H2 src={h2} alt="artists" />
@@ -77,8 +78,15 @@ export const Contact = () => {
           </div>
         </div>
       </Container>
-      <div></div>
-      <img src={map} alt="map" style={appStyle} onWheel={handleOnWheel} />
+      <LazyLoadImage
+        alt="map"
+        effect="blur"
+        src={map}
+        visibleByDefault={map === '../../../public/contact/MapSM.jpg'}
+        placeholderSrc={map_lazy}
+        className={c.map}
+        onWheel={handleOnWheel}
+      />
       <PageBottom />
     </section>
   )

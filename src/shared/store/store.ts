@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { nanoid } from 'nanoid'
 import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion } from './model';
 import main_img1 from "../../../public/main/img1.jpg"
-import main_img1_lazy from "../../../public/main/feedback_img1_lazy.jpg"
+import main_img1_lazy from "../../../public/main/img1_lazy.jpg"
 import main_img2 from "../../../public/main/img2.jpg"
 import main_img2_lazy from "../../../public/main/img2_lazy.jpg"
 import main_img3 from "../../../public/main/img3.jpg"

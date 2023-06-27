@@ -11,7 +11,7 @@
 }
 
 .feedback_img__sm {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 16px;
 }
 
@@ -44,7 +44,6 @@
   }
 
   .feedback_text {
-    height: 228px;
     margin-bottom: 37px;
   }
 

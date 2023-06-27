@@ -52,9 +52,10 @@
 }
 
 @media (min-width: 1600px) {
+ 
     .gallary {
         margin-bottom: 245px;
-        grid-gap: 33px;
+        grid-gap: 30px;
     }
 
     .gallary_item:nth-child(2),
@@ -67,7 +68,6 @@
     .gallary_item:nth-child(3) {
         margin-top: 112px;
     }
-
     .gallary_item:nth-child(5) {
         margin-top: -112px;
     }

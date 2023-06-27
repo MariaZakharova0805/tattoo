@@ -1,5 +1,7 @@
 import { useParams } from "react-router";
 import c from "./member.module.css"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { TextRegular } from '../../shared/ui/text/text-regular';
 import { useMembers } from '../../shared/store';
 import { Header_H2 } from "../../shared/ui/text/text-h2"
@@ -34,11 +36,18 @@ export const Member = () => {
                                             <TextRegular>
                                                 <Link href={member.instagram}>Instagram</Link>
                                                 <Link href={member.instagram}>Facebook</Link>
-                                           </TextRegular>
+                                            </TextRegular>
                                         </div>
                                     </div>
                                     <div className={c.member_img}>
-                                        <img src={member.src} className={c.member_img__image} />
+                                        <LazyLoadImage
+                                            alt={member.name}
+                                            effect="blur"
+                                            src={member.src}
+                                            // visibleByDefault={member.src === member.src}
+                                            placeholderSrc={member.srcSM}
+                                            className={c.member_img__image}
+                                        />
                                     </div>
                                 </div>
                             </Container>

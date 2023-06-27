@@ -16,21 +16,13 @@
 }
 
 .part3_img img {
-  width: 100%;
+  width: 100vw;
 }
 
 .part3_footer {
   display: flex;
   justify-content: center;
   margin-top: -40px;
-}
-
-.part3_footer_img {
-  background-color: none;
-  z-index: 40px;
-  width: 100%;
-  max-width: 263px;
-  background-image: url("../../../public/main/seven_days.svg");
 }
 
 @media (min-width: 768px) {
