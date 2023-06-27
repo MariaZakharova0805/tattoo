@@ -2,53 +2,77 @@ import { create } from 'zustand';
 import { nanoid } from 'nanoid'
 import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion } from './model';
 import main_img1 from "../../../public/main/img1.jpg"
+import main_img1_lazy from "../../../public/main/feedback_img1_lazy.jpg"
 import main_img2 from "../../../public/main/img2.jpg"
+import main_img2_lazy from "../../../public/main/img2_lazy.jpg"
 import main_img3 from "../../../public/main/img3.jpg"
+import main_img3_lazy from "../../../public/main/img3_lazy.jpg"
 import main_img4 from "../../../public/main/img4.jpg"
+import main_img4_lazy from "../../../public/main/img4_lazy.jpg"
 import main_img5 from "../../../public/main/img5.jpg"
+import main_img5_lazy from "../../../public/main/img5_lazy.jpg"
 import main_img6 from "../../../public/main/img6.jpg"
+import main_img6_lazy from "../../../public/main/img6_lazy.jpg"
 import feedback_img1 from "../../../public/main/feedback_img1.jpg"
+import feedback_img1_lazy from "../../../public/main/feedback_img1_lazy.jpg"
 import feedback_img2 from "../../../public/main/feedback_img2.jpg"
+import feedback_img2_lazy from "../../../public/main/feedback_img2_lazy.jpg"
 import feedback_img3 from "../../../public/main/feedback_img3.jpg"
+import feedback_img3_lazy from "../../../public/main/feedback_img3_lazy.jpg"
 import feedback_img1_sm from "../../../public/main/feedback_img1_sm.jpg"
+import feedback_img1_sm_lazy from "../../../public/main/feedback_img1_sm_lazy.jpg"
 import feedback_img2_sm from "../../../public/main/feedback_img2_sm.jpg"
+import feedback_img2_sm_lazy from "../../../public/main/feedback_img2_sm_lazy.jpg"
 import feedback_img3_sm from "../../../public/main/feedback_img3_sm.jpg"
+import feedback_img3_sm_lazy from "../../../public/main/feedback_img3_sm_lazy.jpg"
+
 // Mike +
-import member_mike from "../../../public/artists/mike.jpg"
-import mike_header from '../../../public/h2_mike.svg'
-import mike_img1 from "../../../public/artists/mike_img1.jpg"
-import mike_img2 from "../../../public/artists/mike_img2.jpg"
-import mike_img3 from "../../../public/artists/mike_img3.jpg"
-import member_craig from "../../../public/artists/craig.jpg"
+import member_mike from "../../../public/artists/mike/mike.jpg"
+import member_mike_lazy from "../../../public/artists/mike/mike_lazy.jpg"
+import mike_header from '../../../public/artists/mike/h2_mike.svg'
+import mike_header_lazy from '../../../public/artists/mike/h2_mike-lazy.svg'
+import mike_img1 from "../../../public/artists/mike/mike_img1.jpg"
+import mike_img2 from "../../../public/artists/mike/mike_img2.jpg"
+import mike_img3 from "../../../public/artists/mike/mike_img3.jpg"
+
 // Craig +
-import craig_header from '../../../public/h2_craig.svg'
-import craig_img1 from "../../../public/artists/craig_img1.jpg"
-import craig_img2 from "../../../public/artists/craig_img2.jpg"
-import craig_img3 from "../../../public/artists/craig_img3.jpg"
-import craig_img4 from "../../../public/artists/craig_img4.jpg"
-import craig_img5 from "../../../public/artists/craig_img5.jpg"
-import craig_img6 from "../../../public/artists/craig_img6.jpg"
+import member_craig from "../../../public/artists/craig/craig.jpg"
+import member_craig_lazy from "../../../public/artists/craig/craig_lazy.jpg"
+import craig_header from '../../../public/artists/craig/h2_craig.svg'
+import craig_header_lazy from '../../../public/artists/craig/h2_craig-lazy.svg'
+import craig_img1 from "../../../public/artists/craig/craig_img1.jpg"
+import craig_img2 from "../../../public/artists/craig/craig_img2.jpg"
+import craig_img3 from "../../../public/artists/craig/craig_img3.jpg"
+import craig_img4 from "../../../public/artists/craig/craig_img4.jpg"
+import craig_img5 from "../../../public/artists/craig/craig_img5.jpg"
+import craig_img6 from "../../../public/artists/craig/craig_img6.jpg"
 //Jackie
-import member_jackie from "../../../public/artists/jackie.jpg"
-import jackie_header from '../../../public/h2_jackie.svg'
-import jackie_img1 from "../../../public/artists/jackie_img1.jpg"
-import jackie_img2 from "../../../public/artists/jackie_img2.jpg"
-import jackie_img3 from "../../../public/artists/jackie_img3.jpg"
-import jackie_img4 from "../../../public/artists/jackie_img4.jpg"
-import jackie_img5 from "../../../public/artists/jackie_img5.jpg"
-import jackie_img6 from "../../../public/artists/jackie_img6.jpg"
-import member_lucky from "../../../public/artists/lucky.jpg"
+import member_jackie from "../../../public/artists/jackie/jackie.jpg"
+import member_jackie_lazy from "../../../public/artists/jackie/jackie_lazy.jpg"
+import jackie_header from '../../../public/artists/jackie/h2_jackie.svg'
+import jackie_header_lazy from '../../../public/artists/jackie/h2_jackie-lazy.svg'
+import jackie_img1 from "../../../public/artists/jackie/jackie.jpg"
+import jackie_img2 from "../../../public/artists/jackie/jackie_img2.jpg"
+import jackie_img3 from "../../../public/artists/jackie/jackie_img3.jpg"
+import jackie_img4 from "../../../public/artists/jackie/jackie_img4.jpg"
+import jackie_img5 from "../../../public/artists/jackie/jackie_img5.jpg"
+import jackie_img6 from "../../../public/artists/jackie/jackie_img6.jpg"
 //Lucky - переделать макет
-import lucky_header from '../../../public/h2_lucky.svg'
-import lucky_img1 from "../../../public/artists/lucky_img1.jpg"
-import lucky_img2 from "../../../public/artists/lucky_img2.jpg"
-import lucky_img3 from "../../../public/artists/lucky_img3.jpg"
-import lucky_img4 from "../../../public/artists/lucky_img4.jpg"
-import lucky_img5 from "../../../public/artists/lucky_img5.jpg"
-import lucky_img6 from "../../../public/artists/lucky_img6.jpg"
+import member_lucky from "../../../public/artists/lucky/lucky.jpg"
+import member_lucky_lazy from "../../../public/artists/lucky/lucky_lazy.jpg"
+import lucky_header from '../../../public/artists/lucky/h2_lucky.svg'
+import lucky_header_lazy from '../../../public/artists/lucky/h2_lucky-lazy.svg'
+import lucky_img1 from "../../../public/artists/lucky/lucky_img1.jpg"
+import lucky_img2 from "../../../public/artists/lucky/lucky_img2.jpg"
+import lucky_img3 from "../../../public/artists/lucky/lucky_img3.jpg"
+import lucky_img4 from "../../../public/artists/lucky/lucky_img4.jpg"
+import lucky_img5 from "../../../public/artists/lucky/lucky_img5.jpg"
+import lucky_img6 from "../../../public/artists/lucky/lucky_img6.jpg"
 //Josh
-import member_josh from "../../../public/artists/josh.jpg"
-import team from '../../../public/artists/team.jpg'
+import member_josh from "../../../public/artists/josh/josh.jpg"
+import member_josh_lazy from "../../../public/artists/josh/josh_lazy.jpg"
+import team from '../../../public/artists/team/team.jpg'
+import team_lazy from '../../../public/artists/team/team_lazy.jpg'
 
 type NavBar = {
     menuLinks: MenuLinks[]
@@ -87,12 +111,12 @@ type useMainPageGallery = {
 
 export const useMainPageGallery = create<useMainPageGallery>(() => ({
     imgs: [
-        { id: nanoid(), src: main_img1, alt: 'tatto_image1' },
-        { id: nanoid(), src: main_img2, alt: 'tatto_image2' },
-        { id: nanoid(), src: main_img3, alt: 'tatto_image3' },
-        { id: nanoid(), src: main_img4, alt: 'tatto_image4' },
-        { id: nanoid(), src: main_img5, alt: 'tatto_image5' },
-        { id: nanoid(), src: main_img6, alt: 'tatto_image6' },
+        { id: nanoid(), src: main_img1,src_lazy: main_img1_lazy, alt: 'tatto_image1' },
+        { id: nanoid(), src: main_img2,src_lazy: main_img2_lazy, alt: 'tatto_image2' },
+        { id: nanoid(), src: main_img3,src_lazy: main_img3_lazy, alt: 'tatto_image3' },
+        { id: nanoid(), src: main_img4,src_lazy: main_img4_lazy, alt: 'tatto_image4' },
+        { id: nanoid(), src: main_img5,src_lazy: main_img5_lazy, alt: 'tatto_image5' },
+        { id: nanoid(), src: main_img6,src_lazy: main_img6_lazy, alt: 'tatto_image6' },
     ],
 }));
 
@@ -102,13 +126,11 @@ type useFeedBacks = {
 
 export const useFeedBacks = create<useFeedBacks>(() => ({
     feedbacks: [
-        { id: nanoid(), src: feedback_img1, srcSM: feedback_img1_sm, alt: 'feedback', text: "I am in love with my first piercing! Jason redid an idea that I had because I wasn’t 100% certain about it and he made the perfect piece for me.  He was also funny and kept me calm since I was so so nervous. Highly recommend Jackie! Jackie was calm natured and humble which meant so much to me and I happily booked an appointment with him.", name: 'Shannon NeeSmith' },
-        { id: nanoid(), src: feedback_img2, srcSM: feedback_img2_sm, alt: 'feedback', text: "II’ve had a tattoo that I’ve been unhappy with since I got it a little more than a year ago. I found Lucky online and went to see him when I realized he does a lot of work with cover ups. After  a short consultation about what I liked and didn’t like, I booked an appointment. Lucky did a fabulous job redoing the tattoo exactly as I wanted and improving on what was already there.", name: 'Jake Gyl' },
-        { id: nanoid(), src: feedback_img3, srcSM: feedback_img3_sm, alt: 'feedback', text: "Mike did my tattoo and he did several things I really appreciated: 1) he took the design and my input very seriously, 2) he took his time with placement (asking questions and having me confirm everything) 3) shading! Mike absolutely took the time to carefully and skillfully shade my design. He also was super patient with me moving my arm from time to time because it falling asleep at such a strange angle.", name: 'Jenny Slatehill' },
+        { id: nanoid(), src: feedback_img1,src_lazy: feedback_img1_lazy, srcSM: feedback_img1_sm, srcSM_lazy: feedback_img1_sm_lazy, alt: 'feedback', text: "I am in love with my first piercing! Jason redid an idea that I had because I wasn’t 100% certain about it and he made the perfect piece for me.  He was also funny and kept me calm since I was so so nervous. Highly recommend Jackie! Jackie was calm natured and humble which meant so much to me and I happily booked an appointment with him.", name: 'Shannon NeeSmith' },
+        { id: nanoid(), src: feedback_img2,src_lazy: feedback_img2_lazy, srcSM: feedback_img2_sm, srcSM_lazy: feedback_img2_sm_lazy, alt: 'feedback', text: "II’ve had a tattoo that I’ve been unhappy with since I got it a little more than a year ago. I found Lucky online and went to see him when I realized he does a lot of work with cover ups. After  a short consultation about what I liked and didn’t like, I booked an appointment. Lucky did a fabulous job redoing the tattoo exactly as I wanted and improving on what was already there.", name: 'Jake Gyl' },
+        { id: nanoid(), src: feedback_img3,src_lazy: feedback_img3_lazy, srcSM: feedback_img3_sm, srcSM_lazy: feedback_img3_sm_lazy, alt: 'feedback', text: "Mike did my tattoo and he did several things I really appreciated: 1) he took the design and my input very seriously, 2) he took his time with placement (asking questions and having me confirm everything) 3) shading! Mike absolutely took the time to carefully and skillfully shade my design. He also was super patient with me moving my arm from time to time because it falling asleep at such a strange angle.", name: 'Jenny Slatehill' },
     ],
 }));
-
-
 
 type useMembers = {
     members: IMember[],
@@ -119,8 +141,9 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: member_mike,
-            srcSM: member_mike,
+            srcSM: member_mike_lazy,
             header: mike_header,
+            header_lazy: mike_header_lazy,
             name: 'Mike',
             job: 'tattoo',
             style: [{ id: nanoid(), text: 'Black & Gray' }, { id: nanoid(), text: 'and large-scale storytelling' }],
@@ -141,9 +164,10 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: member_craig,
-            srcSM: member_craig,
+            srcSM: member_craig_lazy,
             name: 'Craig',
             header: craig_header,
+            header_lazy: craig_header_lazy,
             job: 'tattoo',
             style: [{ id: nanoid(), text: 'New school ' }, { id: nanoid(), text: 'and Neo-traditional' }],
             texts: [
@@ -167,9 +191,10 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: member_lucky,
-            srcSM: member_lucky,
+            srcSM: member_lucky_lazy,
             name: 'Jackie',
             header: jackie_header,
+            header_lazy: jackie_header_lazy,
             job: 'Piercing',
             style: [{ id: nanoid(), text: 'All types of piercings: Eye Dermals, septum, bridge, webbing of tongue, webbing on hands' }],
             texts: [
@@ -191,9 +216,10 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: member_jackie,
-            srcSM: member_jackie,
+            srcSM: member_jackie_lazy,
             name: 'Lucky',
             header: lucky_header,
+            header_lazy: lucky_header_lazy,
             job: 'Tattoo',
             style: [{ id: nanoid(), text: 'Black & Gray, traditional and Japanese' }],
             texts: [
@@ -215,7 +241,7 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: member_josh,
-            srcSM: member_josh,
+            srcSM: member_josh_lazy,
             name: 'Josh',
             job: 'manager',
             style: [{ id: nanoid(), text: 'He wants clients to feel special and know they appreciate their presence' }],
@@ -224,7 +250,7 @@ export const useMembers = create<useMembers>(() => ({
         {
             id: nanoid(),
             src: team,
-            srcSM: team,
+            srcSM: team_lazy,
             name: 'our team',
             style: [{ id: nanoid(), text: 'The artists we choose to join our team are caring, down to earth and easy for their clients to talk to. We all want the best for our clients. ' }],
             texts: [{ id: nanoid(), src: '', srcSM: '', text: '' },]

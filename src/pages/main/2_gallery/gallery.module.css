@@ -19,13 +19,13 @@
     margin-top: -20px;
 }
 
-.gallary_item_img {
+.gallary_item img {
     width: 100%;
     filter: grayscale(100%);
     transition: 0.5s;
 }
 
-.gallary_item_img:hover {
+.gallary_item img:hover {
     filter: none;
 }
 

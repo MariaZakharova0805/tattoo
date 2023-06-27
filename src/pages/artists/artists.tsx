@@ -2,7 +2,7 @@ import c from './artists.module.css'
 import { useMembers } from "../../shared/store"
 import { Artist } from "../../entities/artist"
 import { Container } from "../../shared/ui/container/container"
-import h2 from '../../../public/h2_artists.svg'
+import h2 from '../../../public/artists/h2_artists.svg'
 import { Header_H2 } from '../../shared/ui/text/text-h2'
 import { HeaderThin } from "../../shared/ui/text/text-header-thin"
 import { Tape } from '../../entities/tape'

@@ -4,6 +4,8 @@ import { Header_H3 } from "../../../shared/ui/text/text-h3"
 import { TextRegular } from "../../../shared/ui/text/text-regular"
 import opened from "../../../../public/main/opened.svg"
 import part3_img from "../../../../public/main/part3_img.jpg"
+import part3_img_lazy from "../../../../public/main/part3_img_768_lazy.jpg"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const About = () => {
   return (
@@ -18,7 +20,7 @@ export const About = () => {
         </div>
       </Container>
       <div className={c.part3_img}>
-        <img src={part3_img} />
+      <LazyLoadImage src={part3_img} placeholderSrc={part3_img_lazy} alt="destin tattoo company" />
       </div>
       <div className={c.part3_footer}>
         <img src={opened} alt="opened 7 days" className={c.part3_footer_img} />

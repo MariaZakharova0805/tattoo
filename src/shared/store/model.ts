@@ -17,12 +17,15 @@ export interface FooterText {
 export interface IImgs {
     id: string,
     src: string,
+    src_lazy: string,
     alt: string,
 }
 export interface IFeedBack {
     id: string,
     src: string,
+    src_lazy:string,
     srcSM: string,
+    srcSM_lazy:string,
     alt: string,
     text: string,
     name: string,
@@ -40,6 +43,7 @@ export interface IMember {
     srcSM: string,
     name: string,
     header?:string,
+    header_lazy?:string,
     job?: string,
     style: IPorfolio[],
     texts?: IPorfolio[],

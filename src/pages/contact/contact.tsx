@@ -1,6 +1,6 @@
 import c from './contact.module.css'
 import { Header_H2 } from "../../shared/ui/text/text-h2"
-import h2 from '../../../public/h2_contacts.svg'
+import h2 from '../../../public/contact/h2_contacts.svg'
 import map from '../../../public/contact/Map.jpg'
 import { PageBottom } from "../../entities/page-footer/page-footer"
 import { Container } from '../../shared/ui/container/container'
