@@ -3,14 +3,33 @@
     width: 100vw;
 }
 
-.mySwiper {
-    width: 100vw;
+.swiper {
+    width: fit-content !important;
     cursor: grab;
 }
 
-.mySwiper img {
-    display: block;
-    width: 100vw;
-
+.swiper_slide {
+    width: fit-content !important;
 }
 
+.swiper_slide:nth-child(1) {
+    width: fit-content !important
+}
+
+.swiper_slide_img {
+    max-height: 400px;
+}
+
+@media (min-width:786px) {
+    .swiper_slide_img {
+        height: 800px;
+        max-height: 800px;
+    }
+}
+
+@media (min-width:1600px) {
+    .swiper_slide_img {
+        height: 1000px;
+        max-height: 1000px;
+    }
+}

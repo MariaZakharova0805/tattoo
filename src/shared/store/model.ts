@@ -23,9 +23,9 @@ export interface IImgs {
 export interface IFeedBack {
     id: string,
     src: string,
-    src_lazy:string,
+    src_lazy: string,
     srcSM: string,
-    srcSM_lazy:string,
+    srcSM_lazy: string,
     alt: string,
     text: string,
     name: string,
@@ -34,7 +34,7 @@ export interface IPorfolio {
     id: string,
     src?: string,
     srcSM?: string,
-    text?:string,
+    text?: string,
 }
 
 export interface IMember {
@@ -42,8 +42,8 @@ export interface IMember {
     src: string,
     srcSM: string,
     name: string,
-    header?:string,
-    header_lazy?:string,
+    header?: string,
+    header_lazy?: string,
     job?: string,
     style: IPorfolio[],
     texts?: IPorfolio[],
@@ -56,4 +56,11 @@ export interface IQuestion {
     id: string,
     header: string,
     text: string,
+}
+
+export interface IContacts {
+    id: string,
+    title?: string,
+    linkText: string,
+    link: string
 }

@@ -10,39 +10,42 @@ type SwiperProps = {
     member: any
 }
 export const SwiperItem: FC<SwiperProps> = ({ member }) => {
-    const [width, setWidth] = useState(window.innerWidth);
-    const [itemWidth, setItemWidth] = useState(window.innerWidth / 2);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [itemsPerView, setItemsPerView] = useState(window.innerWidth / 2);
     useEffect(() => {
-        if (width > 786) {
-            setItemWidth(3)
+        if (windowWidth > 786) {
+            setItemsPerView(3)
         }
         else {
-            setItemWidth(2)
+            setItemsPerView(2)
         }
         const handleResize = (event: any) => {
-            setWidth(event.target.innerWidth);
+            setWindowWidth(event.target.innerWidth);
         };
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [width]);
+    }, [windowWidth]);
 
     return (
         <>
             <Swiper
-                slidesPerView={itemWidth}
-                centeredSlides={false}
-                className={c.mySwiper}
+                autoHeight={true}
+                slidesPerView={itemsPerView}
+                watchSlidesProgress={true}
+                className={c.swiper}
+                loop={true}
             >
                 {member.map((item: IPorfolio) => {
                     return (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide key={item.id} className={c.swiper_slide}>
                             <LazyLoadImage key={item.id}
                                 alt={item.text}
                                 effect="blur"
                                 src={item.src}
                                 placeholderSrc={item.srcSM}
+                                className={c.swiper_slide_img}
                             />
                         </SwiperSlide>
                     )

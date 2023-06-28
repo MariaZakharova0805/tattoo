@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { nanoid } from 'nanoid'
-import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion } from './model';
+import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts } from './model';
 import main_img1 from "../../../public/main/img1.jpg"
 import main_img1_lazy from "../../../public/main/img1_lazy.jpg"
 import main_img2 from "../../../public/main/img2.jpg"
@@ -25,7 +25,6 @@ import feedback_img2_sm from "../../../public/main/feedback_img2_sm.jpg"
 import feedback_img2_sm_lazy from "../../../public/main/feedback_img2_sm_lazy.jpg"
 import feedback_img3_sm from "../../../public/main/feedback_img3_sm.jpg"
 import feedback_img3_sm_lazy from "../../../public/main/feedback_img3_sm_lazy.jpg"
-
 // Mike +
 import member_mike from "../../../public/artists/mike/mike.jpg"
 import member_mike_lazy from "../../../public/artists/mike/mike_lazy.jpg"
@@ -37,7 +36,6 @@ import mike_img2 from "../../../public/artists/mike/mike_img2.jpg"
 import mike_img2_lazy from "../../../public/artists/mike/mike_img2_lazy.jpg"
 import mike_img3 from "../../../public/artists/mike/mike_img3.jpg"
 import mike_img3_lazy from "../../../public/artists/mike/mike_img3_lazy.jpg"
-
 // Craig +
 import member_craig from "../../../public/artists/craig/craig.jpg"
 import member_craig_lazy from "../../../public/artists/craig/craig_lazy.jpg"
@@ -55,7 +53,6 @@ import craig_img5 from "../../../public/artists/craig/craig_img5.jpg"
 import craig_img5_lazy from "../../../public/artists/craig/craig_img5_lazy.jpg"
 import craig_img6 from "../../../public/artists/craig/craig_img6.jpg"
 import craig_img6_lazy from "../../../public/artists/craig/craig_img6_lazy.jpg"
-
 //Jackie
 import member_jackie from "../../../public/artists/jackie/jackie.jpg"
 import member_jackie_lazy from "../../../public/artists/jackie/jackie_lazy.jpg"
@@ -73,7 +70,6 @@ import jackie_img5 from "../../../public/artists/jackie/jackie_img5.jpg"
 import jackie_img5_lazy from "../../../public/artists/jackie/jackie_img5_lazy.jpg"
 import jackie_img6 from "../../../public/artists/jackie/jackie_img6.jpg"
 import jackie_img6_lazy from "../../../public/artists/jackie/jackie_img6_lazy.jpg"
-
 //Lucky - переделать макет
 import member_lucky from "../../../public/artists/lucky/lucky.jpg"
 import member_lucky_lazy from "../../../public/artists/lucky/lucky_lazy.jpg"
@@ -91,7 +87,6 @@ import lucky_img5 from "../../../public/artists/lucky/lucky_img5.jpg"
 import lucky_img5_lazy from "../../../public/artists/lucky/lucky_img5_lazy.jpg"
 import lucky_img6 from "../../../public/artists/lucky/lucky_img6.jpg"
 import lucky_img6_lazy from "../../../public/artists/lucky/lucky_img6_lazy.jpg"
-
 //Josh
 import member_josh from "../../../public/artists/josh/josh.jpg"
 import member_josh_lazy from "../../../public/artists/josh/josh_lazy.jpg"
@@ -135,12 +130,12 @@ type useMainPageGallery = {
 
 export const useMainPageGallery = create<useMainPageGallery>(() => ({
     imgs: [
-        { id: nanoid(), src: main_img1,src_lazy: main_img1_lazy, alt: 'tatto_image1' },
-        { id: nanoid(), src: main_img2,src_lazy: main_img2_lazy, alt: 'tatto_image2' },
-        { id: nanoid(), src: main_img3,src_lazy: main_img3_lazy, alt: 'tatto_image3' },
-        { id: nanoid(), src: main_img4,src_lazy: main_img4_lazy, alt: 'tatto_image4' },
-        { id: nanoid(), src: main_img5,src_lazy: main_img5_lazy, alt: 'tatto_image5' },
-        { id: nanoid(), src: main_img6,src_lazy: main_img6_lazy, alt: 'tatto_image6' },
+        { id: nanoid(), src: main_img1, src_lazy: main_img1_lazy, alt: 'tatto_image1' },
+        { id: nanoid(), src: main_img2, src_lazy: main_img2_lazy, alt: 'tatto_image2' },
+        { id: nanoid(), src: main_img3, src_lazy: main_img3_lazy, alt: 'tatto_image3' },
+        { id: nanoid(), src: main_img4, src_lazy: main_img4_lazy, alt: 'tatto_image4' },
+        { id: nanoid(), src: main_img5, src_lazy: main_img5_lazy, alt: 'tatto_image5' },
+        { id: nanoid(), src: main_img6, src_lazy: main_img6_lazy, alt: 'tatto_image6' },
     ],
 }));
 
@@ -150,9 +145,9 @@ type useFeedBacks = {
 
 export const useFeedBacks = create<useFeedBacks>(() => ({
     feedbacks: [
-        { id: nanoid(), src: feedback_img1,src_lazy: feedback_img1_lazy, srcSM: feedback_img1_sm, srcSM_lazy: feedback_img1_sm_lazy, alt: 'feedback', text: "I am in love with my first piercing! Jason redid an idea that I had because I wasn’t 100% certain about it and he made the perfect piece for me.  He was also funny and kept me calm since I was so so nervous. Highly recommend Jackie! Jackie was calm natured and humble which meant so much to me and I happily booked an appointment with him.", name: 'Shannon NeeSmith' },
-        { id: nanoid(), src: feedback_img2,src_lazy: feedback_img2_lazy, srcSM: feedback_img2_sm, srcSM_lazy: feedback_img2_sm_lazy, alt: 'feedback', text: "II’ve had a tattoo that I’ve been unhappy with since I got it a little more than a year ago. I found Lucky online and went to see him when I realized he does a lot of work with cover ups. After  a short consultation about what I liked and didn’t like, I booked an appointment. Lucky did a fabulous job redoing the tattoo exactly as I wanted and improving on what was already there.", name: 'Jake Gyl' },
-        { id: nanoid(), src: feedback_img3,src_lazy: feedback_img3_lazy, srcSM: feedback_img3_sm, srcSM_lazy: feedback_img3_sm_lazy, alt: 'feedback', text: "Mike did my tattoo and he did several things I really appreciated: 1) he took the design and my input very seriously, 2) he took his time with placement (asking questions and having me confirm everything) 3) shading! Mike absolutely took the time to carefully and skillfully shade my design. He also was super patient with me moving my arm from time to time because it falling asleep at such a strange angle.", name: 'Jenny Slatehill' },
+        { id: nanoid(), src: feedback_img1, src_lazy: feedback_img1_lazy, srcSM: feedback_img1_sm, srcSM_lazy: feedback_img1_sm_lazy, alt: 'feedback', text: "I am in love with my first piercing! Jason redid an idea that I had because I wasn’t 100% certain about it and he made the perfect piece for me.  He was also funny and kept me calm since I was so so nervous. Highly recommend Jackie! Jackie was calm natured and humble which meant so much to me and I happily booked an appointment with him.", name: 'Shannon NeeSmith' },
+        { id: nanoid(), src: feedback_img2, src_lazy: feedback_img2_lazy, srcSM: feedback_img2_sm, srcSM_lazy: feedback_img2_sm_lazy, alt: 'feedback', text: "II’ve had a tattoo that I’ve been unhappy with since I got it a little more than a year ago. I found Lucky online and went to see him when I realized he does a lot of work with cover ups. After  a short consultation about what I liked and didn’t like, I booked an appointment. Lucky did a fabulous job redoing the tattoo exactly as I wanted and improving on what was already there.", name: 'Jake Gyl' },
+        { id: nanoid(), src: feedback_img3, src_lazy: feedback_img3_lazy, srcSM: feedback_img3_sm, srcSM_lazy: feedback_img3_sm_lazy, alt: 'feedback', text: "Mike did my tattoo and he did several things I really appreciated: 1) he took the design and my input very seriously, 2) he took his time with placement (asking questions and having me confirm everything) 3) shading! Mike absolutely took the time to carefully and skillfully shade my design. He also was super patient with me moving my arm from time to time because it falling asleep at such a strange angle.", name: 'Jenny Slatehill' },
     ],
 }));
 
@@ -298,5 +293,21 @@ export const useFaq = create<FAQ>(() => ({
         { id: nanoid(), header: 'How old do I have to be to get a tattoo or piercing?', text: 'Tattoo: Sorry- no one under 18- it’s the law. State/Gov. issued ID required. Piercing: 18 years of age with State/Gov. issued ID. If under 18, a parent/legal guardian must be present with the *minor’s birth certificate, *a State/Gov. issued ID for the parent/guardian and *a picture ID for the minor.' },
         { id: nanoid(), header: 'What is considered a proper form or ID?', text: 'A state issued driver’s license or state ID card, a military ID or a passport. Many forms of ID are valid for 5 or more years and though the ID presented may be valid, the photo must be current enough to match the person presenting the ID.' },
     ]
-})); 
-  
+}));
+
+
+type Contacts = {
+    contactLinks: IContacts[]
+    socialLinks: IContacts[]
+}
+export const useContacts = create<Contacts>(() => ({
+    contactLinks: [
+        { id: nanoid(), title: 'Phone number', linkText: '+1 850-460-8484', link: 'tel:18504608484' },
+        { id: nanoid(), title: 'E-mail', linkText: 'destintattoocompany@gmail.com', link: 'mailto:destintattoocompany@gmail.com' },
+        { id: nanoid(), title: 'Address', linkText: '409 HARBOUR BOULEVARD , DESTIN, FL, USA', link: 'https://goo.gl/maps/Kzijm1wQke7bW5sp9' },
+    ],
+    socialLinks: [
+        { id: nanoid(), linkText: 'Instagram', link: 'https://www.instagram.com/destintattoocompany/' },
+        { id: nanoid(), linkText: 'Facebook', link: 'https://www.instagram.com/destintattoocompany/' },
+    ]
+}));
