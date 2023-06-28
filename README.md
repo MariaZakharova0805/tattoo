@@ -1,5 +1,5 @@
 # Destin Tattoo
-![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)
+<a href="https://tattoo-ten.vercel.app/" target="_blank">![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)</a>
 Tattoo and piercing website
 
 ### Project Features
