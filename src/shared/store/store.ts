@@ -32,8 +32,11 @@ import member_mike_lazy from "../../../public/artists/mike/mike_lazy.jpg"
 import mike_header from '../../../public/artists/mike/h2_mike.svg'
 import mike_header_lazy from '../../../public/artists/mike/h2_mike-lazy.svg'
 import mike_img1 from "../../../public/artists/mike/mike_img1.jpg"
+import mike_img1_lazy from "../../../public/artists/mike/mike_img1_lazy.jpg"
 import mike_img2 from "../../../public/artists/mike/mike_img2.jpg"
+import mike_img2_lazy from "../../../public/artists/mike/mike_img2_lazy.jpg"
 import mike_img3 from "../../../public/artists/mike/mike_img3.jpg"
+import mike_img3_lazy from "../../../public/artists/mike/mike_img3_lazy.jpg"
 
 // Craig +
 import member_craig from "../../../public/artists/craig/craig.jpg"
@@ -41,33 +44,54 @@ import member_craig_lazy from "../../../public/artists/craig/craig_lazy.jpg"
 import craig_header from '../../../public/artists/craig/h2_craig.svg'
 import craig_header_lazy from '../../../public/artists/craig/h2_craig-lazy.svg'
 import craig_img1 from "../../../public/artists/craig/craig_img1.jpg"
+import craig_img1_lazy from "../../../public/artists/craig/craig_img1_lazy.jpg"
 import craig_img2 from "../../../public/artists/craig/craig_img2.jpg"
+import craig_img2_lazy from "../../../public/artists/craig/craig_img2_lazy.jpg"
 import craig_img3 from "../../../public/artists/craig/craig_img3.jpg"
+import craig_img3_lazy from "../../../public/artists/craig/craig_img3_lazy.jpg"
 import craig_img4 from "../../../public/artists/craig/craig_img4.jpg"
+import craig_img4_lazy from "../../../public/artists/craig/craig_img4_lazy.jpg"
 import craig_img5 from "../../../public/artists/craig/craig_img5.jpg"
+import craig_img5_lazy from "../../../public/artists/craig/craig_img5_lazy.jpg"
 import craig_img6 from "../../../public/artists/craig/craig_img6.jpg"
+import craig_img6_lazy from "../../../public/artists/craig/craig_img6_lazy.jpg"
+
 //Jackie
 import member_jackie from "../../../public/artists/jackie/jackie.jpg"
 import member_jackie_lazy from "../../../public/artists/jackie/jackie_lazy.jpg"
 import jackie_header from '../../../public/artists/jackie/h2_jackie.svg'
 import jackie_header_lazy from '../../../public/artists/jackie/h2_jackie-lazy.svg'
-import jackie_img1 from "../../../public/artists/jackie/jackie.jpg"
+import jackie_img1 from "../../../public/artists/jackie/jackie_img1.jpg"
+import jackie_img1_lazy from "../../../public/artists/jackie/jackie_img1_lazy.jpg"
 import jackie_img2 from "../../../public/artists/jackie/jackie_img2.jpg"
+import jackie_img2_lazy from "../../../public/artists/jackie/jackie_img2_lazy.jpg"
 import jackie_img3 from "../../../public/artists/jackie/jackie_img3.jpg"
+import jackie_img3_lazy from "../../../public/artists/jackie/jackie_img3_lazy.jpg"
 import jackie_img4 from "../../../public/artists/jackie/jackie_img4.jpg"
+import jackie_img4_lazy from "../../../public/artists/jackie/jackie_img4_lazy.jpg"
 import jackie_img5 from "../../../public/artists/jackie/jackie_img5.jpg"
+import jackie_img5_lazy from "../../../public/artists/jackie/jackie_img5_lazy.jpg"
 import jackie_img6 from "../../../public/artists/jackie/jackie_img6.jpg"
+import jackie_img6_lazy from "../../../public/artists/jackie/jackie_img6_lazy.jpg"
+
 //Lucky - переделать макет
 import member_lucky from "../../../public/artists/lucky/lucky.jpg"
 import member_lucky_lazy from "../../../public/artists/lucky/lucky_lazy.jpg"
 import lucky_header from '../../../public/artists/lucky/h2_lucky.svg'
 import lucky_header_lazy from '../../../public/artists/lucky/h2_lucky-lazy.svg'
 import lucky_img1 from "../../../public/artists/lucky/lucky_img1.jpg"
+import lucky_img1_lazy from "../../../public/artists/lucky/lucky_img1_lazy.jpg"
 import lucky_img2 from "../../../public/artists/lucky/lucky_img2.jpg"
+import lucky_img2_lazy from "../../../public/artists/lucky/lucky_img2_lazy.jpg"
 import lucky_img3 from "../../../public/artists/lucky/lucky_img3.jpg"
+import lucky_img3_lazy from "../../../public/artists/lucky/lucky_img3_lazy.jpg"
 import lucky_img4 from "../../../public/artists/lucky/lucky_img4.jpg"
+import lucky_img4_lazy from "../../../public/artists/lucky/lucky_img4_lazy.jpg"
 import lucky_img5 from "../../../public/artists/lucky/lucky_img5.jpg"
+import lucky_img5_lazy from "../../../public/artists/lucky/lucky_img5_lazy.jpg"
 import lucky_img6 from "../../../public/artists/lucky/lucky_img6.jpg"
+import lucky_img6_lazy from "../../../public/artists/lucky/lucky_img6_lazy.jpg"
+
 //Josh
 import member_josh from "../../../public/artists/josh/josh.jpg"
 import member_josh_lazy from "../../../public/artists/josh/josh_lazy.jpg"
@@ -156,9 +180,9 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: mike_img1, srcSM: mike_img1, text: 'neck tattoo' },
-                { id: nanoid(), src: mike_img2, srcSM: mike_img2, text: 'back tattoo' },
-                { id: nanoid(), src: mike_img3, srcSM: mike_img2, text: 'full body tattoo' },
+                { id: nanoid(), src: mike_img1, srcSM: mike_img1_lazy, text: 'neck tattoo' },
+                { id: nanoid(), src: mike_img2, srcSM: mike_img2_lazy, text: 'back tattoo' },
+                { id: nanoid(), src: mike_img3, srcSM: mike_img3_lazy, text: 'full body tattoo' },
             ]
         },
         {
@@ -180,12 +204,12 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: craig_img1, srcSM: mike_img1, text: 'neck tattoo' },
-                { id: nanoid(), src: craig_img2, srcSM: mike_img2, text: 'chest  tattoo' },
-                { id: nanoid(), src: craig_img3, srcSM: mike_img2, text: 'full body tattoo' },
-                { id: nanoid(), src: craig_img4, srcSM: mike_img1, text: 'sholder tattoo' },
-                { id: nanoid(), src: craig_img5, srcSM: mike_img2, text: 'hand tattoo' },
-                { id: nanoid(), src: craig_img6, srcSM: mike_img2, text: 'hand tattoo' },
+                { id: nanoid(), src: craig_img1, srcSM: craig_img1_lazy, text: 'neck tattoo' },
+                { id: nanoid(), src: craig_img2, srcSM: craig_img2_lazy, text: 'chest  tattoo' },
+                { id: nanoid(), src: craig_img3, srcSM: craig_img3_lazy, text: 'full body tattoo' },
+                { id: nanoid(), src: craig_img4, srcSM: craig_img4_lazy, text: 'sholder tattoo' },
+                { id: nanoid(), src: craig_img5, srcSM: craig_img5_lazy, text: 'hand tattoo' },
+                { id: nanoid(), src: craig_img6, srcSM: craig_img6_lazy, text: 'hand tattoo' },
             ]
         },
         {
@@ -205,12 +229,12 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: jackie_img1, srcSM: mike_img1, text: 'lip piercing' },
-                { id: nanoid(), src: jackie_img2, srcSM: mike_img2, text: 'eyebrow piercing' },
-                { id: nanoid(), src: jackie_img3, srcSM: mike_img2, text: 'nose piercing' },
-                { id: nanoid(), src: jackie_img4, srcSM: mike_img1, text: 'nose and eyebrow piercing' },
-                { id: nanoid(), src: jackie_img5, srcSM: mike_img2, text: 'nose and eyebrow piercing ' },
-                { id: nanoid(), src: jackie_img6, srcSM: mike_img2, text: 'eyebrow piercing' },
+                { id: nanoid(), src: jackie_img1, srcSM: jackie_img1_lazy, text: 'lip piercing' },
+                { id: nanoid(), src: jackie_img2, srcSM: jackie_img2_lazy, text: 'eyebrow piercing' },
+                { id: nanoid(), src: jackie_img3, srcSM: jackie_img3_lazy, text: 'nose piercing' },
+                { id: nanoid(), src: jackie_img4, srcSM: jackie_img4_lazy, text: 'nose and eyebrow piercing' },
+                { id: nanoid(), src: jackie_img5, srcSM: jackie_img5_lazy, text: 'nose and eyebrow piercing ' },
+                { id: nanoid(), src: jackie_img6, srcSM: jackie_img6_lazy, text: 'eyebrow piercing' },
             ]
         },
         {
@@ -230,12 +254,12 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: lucky_img1, srcSM: mike_img1, text: 'back tattoo' },
-                { id: nanoid(), src: lucky_img2, srcSM: mike_img2, text: 'full arm tattoo' },
-                { id: nanoid(), src: lucky_img3, srcSM: mike_img1, text: 'arm and shoulders tattoo' },
-                { id: nanoid(), src: lucky_img4, srcSM: mike_img2, text: 'neck and shoulders tattoo ' },
-                { id: nanoid(), src: lucky_img5, srcSM: mike_img2, text: 'had  tattoo' },
-                { id: nanoid(), src: lucky_img6, srcSM: mike_img2, text: 'arm tattoo' },
+                { id: nanoid(), src: lucky_img1, srcSM: lucky_img1_lazy, text: 'back tattoo' },
+                { id: nanoid(), src: lucky_img2, srcSM: lucky_img2_lazy, text: 'full arm tattoo' },
+                { id: nanoid(), src: lucky_img3, srcSM: lucky_img3_lazy, text: 'arm and shoulders tattoo' },
+                { id: nanoid(), src: lucky_img4, srcSM: lucky_img4_lazy, text: 'neck and shoulders tattoo ' },
+                { id: nanoid(), src: lucky_img5, srcSM: lucky_img5_lazy, text: 'had  tattoo' },
+                { id: nanoid(), src: lucky_img6, srcSM: lucky_img6_lazy, text: 'arm tattoo' },
             ],
         },
         {

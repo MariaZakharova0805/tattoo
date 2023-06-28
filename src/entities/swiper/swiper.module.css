@@ -1,0 +1,16 @@
+.body {
+    position: relative;
+    width: 100vw;
+}
+
+.mySwiper {
+    width: 100vw;
+    cursor: grab;
+}
+
+.mySwiper img {
+    display: block;
+    width: 100vw;
+
+}
+

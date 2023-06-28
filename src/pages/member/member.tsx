@@ -9,6 +9,7 @@ import { Container } from "../../shared/ui/container/container";
 import { Header_H3 } from "../../shared/ui/text/text-h3";
 import { PageBottom } from "../../entities/page-footer/page-footer";
 import { Link } from "../../shared/ui/link/link";
+import { SwiperItem } from "../../entities/swiper";
 
 export const Member = () => {
     const { name } = useParams();
@@ -44,13 +45,13 @@ export const Member = () => {
                                             alt={member.name}
                                             effect="blur"
                                             src={member.src}
-                                            // visibleByDefault={member.src === member.src}
                                             placeholderSrc={member.srcSM}
                                             className={c.member_img__image}
                                         />
                                     </div>
                                 </div>
                             </Container>
+                            <div className={c.swiper}><SwiperItem member={member.potfolio} /></div>
                             <Container>
                                 <Header_H3 textAlign="center">Tattoo by {member.name}</Header_H3>
                                 <PageBottom />

@@ -20,6 +20,7 @@
     margin-right: 20px;
     transform: skew(2deg);
     color: var(--bg-color);
+    white-space: nowrap;
 }
 
 .triange {

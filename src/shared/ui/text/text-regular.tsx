@@ -5,10 +5,11 @@ type TextProps = {
     children: any,
     color?: 'grey' | 'white',
     textAlign?: 'center' | undefined,
+    textTransform?: 'uppercase' | undefined,
 }
 
-export const TextRegular: FC<TextProps> = ({ children, color, textAlign }) => {
+export const TextRegular: FC<TextProps> = ({ children, color, textAlign, textTransform }) => {
     return (
-        <p style={{textAlign}} className={color === 'grey' ? c.text_regular_grey : c.text_regular}>{children}</p>
+        <p style={{textAlign, textTransform}} className={color === 'grey' ? c.text_regular_grey : c.text_regular}>{children}</p>
     )
 }

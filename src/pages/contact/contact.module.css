@@ -19,11 +19,6 @@
     margin-bottom: 40px;
 }
 
-.map {
-    margin-bottom: 68px;
-    width: 100vw;
-}
-
 
 @media (min-width:768px) {
     .top {
@@ -44,13 +39,5 @@
         margin-bottom: 0;
     }
 
-    .map {
-        margin-bottom: 100px;
-    }
 }
 
-@media (min-width:1600px) {
-    .map {
-        margin-bottom: 168px;
-    }
-}

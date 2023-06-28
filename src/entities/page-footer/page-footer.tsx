@@ -10,7 +10,7 @@ export const PageBottom = () => {
       <div className={c.block}>
         <HeaderThin>We hope we have your attention and you’re willing</HeaderThin>
         <Header_H3 color={'white'}>to take advantage of our inspiration</Header_H3>
-        <ButtonArrow href="./appointment">book</ButtonArrow>
+        <ButtonArrow href="/appointment">book</ButtonArrow>
       </div>
     </Container>
   )

@@ -30,7 +30,7 @@ export interface IFeedBack {
     text: string,
     name: string,
 }
-interface IPorfolio {
+export interface IPorfolio {
     id: string,
     src?: string,
     srcSM?: string,

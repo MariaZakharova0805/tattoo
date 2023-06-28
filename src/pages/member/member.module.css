@@ -19,7 +19,9 @@
     margin-bottom: 20px;
 }
 
-
+.swiper {
+    margin-bottom: 80px;
+}
 
 @media (min-width:768px) {
     .member {

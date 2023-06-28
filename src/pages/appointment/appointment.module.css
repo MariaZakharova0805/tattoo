@@ -1,0 +1,28 @@
+.block {
+    width: 100vw;
+    position: relative;
+}
+
+.block * {
+    position: relative;
+}
+
+.header {
+    margin-bottom: 86px;
+}
+
+.form {
+    margin-bottom: 77px;
+}
+
+.block_tape {
+    margin-top: -100px;
+}
+
+@media (min-width:768px) {}
+
+@media (min-width:1600px) {
+    .block_tape {
+        margin-top: -50px;
+    }
+}
