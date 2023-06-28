@@ -1,10 +1,10 @@
 # Destin Tattoo
-Tattoo and piercing website
-
 ![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)
+Tattoo and piercing website
 
 ### Project Features
 - SPA
+- Responsive layout "mobile first"
 - Animation
 - Picture slider
 - Sending a pre-appointment details by mail from the site
