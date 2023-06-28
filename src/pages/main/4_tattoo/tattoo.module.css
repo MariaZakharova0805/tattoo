@@ -27,7 +27,7 @@
 }
 .block_text {
     background: right top / contain no-repeat url('../../../../public/main/tattoo_img.jpg');
-    padding-top: 120px;
+    padding-top: 230px;
     z-index: 2;
     position: relative;
 }
