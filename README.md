@@ -1,5 +1,5 @@
 # Destin Tattoo
-![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)
+<a href="https://tattoo-ten.vercel.app/" target="_blank">![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)</a>
 Tattoo and piercing website
 
 ### Project Features
@@ -43,3 +43,6 @@ $ npm run build
 - react-router-dom
 - swiper
 - zustand
+
+## Design
+Site layout design done by <a href="https://www.behance.net/3a7b044e" target="_blank">Olha Sheretova</a> 
