@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { nanoid } from 'nanoid'
-import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts } from './model';
+import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts, IImage } from './model';
 import main_img1 from "../../../public/main/img1.jpg"
 import main_img1_lazy from "../../../public/main/img1_lazy.jpg"
 import main_img2 from "../../../public/main/img2.jpg"
@@ -36,6 +36,15 @@ import mike_img2 from "../../../public/artists/mike/mike_img2.jpg"
 import mike_img2_lazy from "../../../public/artists/mike/mike_img2_lazy.jpg"
 import mike_img3 from "../../../public/artists/mike/mike_img3.jpg"
 import mike_img3_lazy from "../../../public/artists/mike/mike_img3_lazy.jpg"
+import mike_img4 from "../../../public/artists/mike/mike_img4.jpg"
+import mike_img4_lazy from "../../../public/artists/mike/mike_img4_lazy.jpg"
+import mike_img5 from "../../../public/artists/mike/mike-img5.jpg"
+import mike_img5_lazy from "../../../public/artists/mike/mike-img5_lazy.jpg"
+import mike_img6 from "../../../public/artists/mike/mike_img6.jpg"
+import mike_img6_lazy from "../../../public/artists/mike/mike_img6_lazy.jpg"
+import mike_img7 from "../../../public/artists/mike/mike_img7.jpg"
+import mike_img7_lazy from "../../../public/artists/mike/mike_img7_lazy.jpg"
+
 // Craig +
 import member_craig from "../../../public/artists/craig/craig.jpg"
 import member_craig_lazy from "../../../public/artists/craig/craig_lazy.jpg"
@@ -53,6 +62,11 @@ import craig_img5 from "../../../public/artists/craig/craig_img5.jpg"
 import craig_img5_lazy from "../../../public/artists/craig/craig_img5_lazy.jpg"
 import craig_img6 from "../../../public/artists/craig/craig_img6.jpg"
 import craig_img6_lazy from "../../../public/artists/craig/craig_img6_lazy.jpg"
+import craig_img7 from "../../../public/artists/craig/craig_img7.jpg"
+import craig_img7_lazy from "../../../public/artists/craig/craig_img7_lazy.jpg"
+import craig_img8 from "../../../public/artists/craig/craig_img8.jpg"
+import craig_img8_lazy from "../../../public/artists/craig/craig_img8_lazy.jpg"
+
 //Jackie
 import member_jackie from "../../../public/artists/jackie/jackie.jpg"
 import member_jackie_lazy from "../../../public/artists/jackie/jackie_lazy.jpg"
@@ -87,6 +101,11 @@ import lucky_img5 from "../../../public/artists/lucky/lucky_img5.jpg"
 import lucky_img5_lazy from "../../../public/artists/lucky/lucky_img5_lazy.jpg"
 import lucky_img6 from "../../../public/artists/lucky/lucky_img6.jpg"
 import lucky_img6_lazy from "../../../public/artists/lucky/lucky_img6_lazy.jpg"
+import lucky_img7 from "../../../public/artists/lucky/lucky_img7.jpg"
+import lucky_img7_lazy from "../../../public/artists/lucky/lucky_img7_lazy.jpg"
+import lucky_img8 from "../../../public/artists/lucky/lucky_img8.jpg"
+import lucky_img8_lazy from "../../../public/artists/lucky/lucky_img8_lazy.jpg"
+
 //Josh
 import member_josh from "../../../public/artists/josh/josh.jpg"
 import member_josh_lazy from "../../../public/artists/josh/josh_lazy.jpg"
@@ -178,6 +197,10 @@ export const useMembers = create<useMembers>(() => ({
                 { id: nanoid(), src: mike_img1, srcSM: mike_img1_lazy, text: 'neck tattoo' },
                 { id: nanoid(), src: mike_img2, srcSM: mike_img2_lazy, text: 'back tattoo' },
                 { id: nanoid(), src: mike_img3, srcSM: mike_img3_lazy, text: 'full body tattoo' },
+                { id: nanoid(), src: mike_img4, srcSM: mike_img4_lazy, text: 'full body tattoo' },
+                { id: nanoid(), src: mike_img5, srcSM: mike_img5_lazy, text: 'back tattoo' },
+                { id: nanoid(), src: mike_img6, srcSM: mike_img6_lazy, text: 'breast tattoo' },
+
             ]
         },
         {
@@ -310,4 +333,30 @@ export const useContacts = create<Contacts>(() => ({
         { id: nanoid(), linkText: 'Instagram', link: 'https://www.instagram.com/destintattoocompany/' },
         { id: nanoid(), linkText: 'Facebook', link: 'https://www.instagram.com/destintattoocompany/' },
     ]
+}));
+
+
+type Galley = {
+    images: IImage[]
+}
+export const useGallery = create<Galley>(() => ({
+    images: [
+        { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img2, imgSM: craig_img2_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img3, imgSM: lucky_img3_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img4, imgSM: mike_img4_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img:  main_img4, imgSM:  main_img4_lazy },
+        { id: nanoid(), job: 'piercing', artist: 'Jackie ', img: jackie_img6, imgSM: jackie_img6_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img5, imgSM: mike_img4_lazy },
+        { id: nanoid(), job: 'piercing', artist: 'Jackie', img: jackie_img5, imgSM: jackie_img5_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img6, imgSM: mike_img6_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img7, imgSM: lucky_img7_lazy},
+        { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img7, imgSM: craig_img7_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img:  mike_img7, imgSM:  mike_img7_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img8, imgSM: craig_img8_lazy },
+        { id: nanoid(), job: 'piercing', artist: 'Jackie', img: jackie_img3, imgSM: jackie_img3_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Craig', img: main_img5, imgSM: main_img5_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img8, imgSM: lucky_img8_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img1, imgSM: lucky_img1_lazy },
+ 
+    ],
 }));

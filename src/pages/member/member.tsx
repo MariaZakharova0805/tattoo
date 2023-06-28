@@ -35,7 +35,7 @@ export const Member = () => {
                                         </div>
                                         <div className={c.member_texts_social}>
                                             <TextRegular>
-                                                <Link href={member.instagram}>Instagram</Link>
+                                                <Link href={member.instagram}>Instagram</Link><br/>
                                                 <Link href={member.instagram}>Facebook</Link>
                                             </TextRegular>
                                         </div>

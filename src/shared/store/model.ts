@@ -64,3 +64,12 @@ export interface IContacts {
     linkText: string,
     link: string
 }
+
+export interface IImage {
+    id: string,
+    job: string,
+    artist: string,
+    img: string,
+    imgSM: string,
+}
+
