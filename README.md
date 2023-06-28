@@ -1,7 +1,7 @@
 # Destin Tattoo
 Tattoo and piercing website
 
-![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.png)
+![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)
 
 ### Project Features
 - SPA
