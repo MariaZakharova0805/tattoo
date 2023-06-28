@@ -2,8 +2,6 @@
 ![Project illustartion](https://github.com/MariaZakharova0805/tattoo/raw/main/screenshot.jpg)
 Tattoo and piercing website
 
-Site layout design done by <a href="https://www.behance.net/3a7b044e" target="_blank">Olha Sheretova</a> 
-
 ### Project Features
 - SPA
 - Responsive layout "mobile first"
@@ -44,3 +42,6 @@ $ npm run build
 - react-router-dom
 - swiper
 - zustand
+
+## Design
+Site layout design done by <a href="https://www.behance.net/3a7b044e" target="_blank">Olha Sheretova</a> 
