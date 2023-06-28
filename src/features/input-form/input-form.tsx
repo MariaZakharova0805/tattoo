@@ -1,8 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import c from './input-form.module.css'
 import { useForm, SubmitHandler } from "react-hook-form"
 import arrow from '../../../public/svg/arrow_red.svg'
 import { TextRegular } from '../../shared/ui/text/text-regular'
+import { useFormData, useContactsFormVisibility } from '../../shared/store'
+import emailjs from "@emailjs/browser";
+
 type Inputs = {
     name: string
     email: string
@@ -10,9 +13,13 @@ type Inputs = {
     service: string
     artist: string
     message: string
+    picture: any
 }
 
 export const InputForm = () => {
+    const setFormData = useFormData(state => state.setFormData)
+    const setFormVisible = useContactsFormVisibility(state => state.setFormVisible)
+    const form = useRef();
     const {
         register,
         handleSubmit,
@@ -29,30 +36,37 @@ export const InputForm = () => {
         service: "",
         artist: "",
         message: "",
+        picture: "",
     };
 
-
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
+    const onSubmit: SubmitHandler<Inputs> = () => {
+        //@ts-ignore
+        emailjs.sendForm('service_44a78ff', 'template_x2d7ms9', form.current, 'svtDnQJmJRG1o8S87')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
         reset(empty);
         clearErrors();
-        console.log(data);
+        setFormVisible(false);
     }
 
     useEffect(() => {
         watch((value) => {
-            console.log(value)
+            setFormData(value)
         });
     }, [watch]);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        //@ts-ignore
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} >
             <div className={c.form}>
                 <div className={c.form_left}>
                     <div className={c.form_item}>
                         <label>Your name</label>
                         <input {...register("name")} />
                     </div>
-
                     <div className={c.form_item}>
                         <label>E-mail</label>
                         <input {...register("email", { required: true })} />
@@ -82,8 +96,13 @@ export const InputForm = () => {
                 </div>
                 <div className={c.form_right}>
                     <div className={c.form_item}>
-                        <label>Any questions? Have an ideas and image? Show us! Write your message if you wish </label>
-                        <input {...register("message")} placeholder='Hi!' />
+                        <div className={c.form_item_textarea}>
+                            <label>Any questions? Have an ideas and image? Show us! Write your message if you wish </label>
+                            <textarea {...register("message")} placeholder='Hi!' />
+                        </div>
+                        {/* <div className={c.img_input}>
+                            <input {...register("picture")} type="file" className={c.custom_file_input} />
+                        </div> */}
                     </div></div>
             </div>
             <div className={c.form_footer}>

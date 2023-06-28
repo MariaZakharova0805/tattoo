@@ -2,7 +2,7 @@ import c from "./feedbacks.module.css"
 import { Container } from '../../../shared/ui/container/container'
 import { useFeedBacks } from '../../../shared/store'
 import { Feedback } from "../../../entities/feedback/feedback"
-import { Tape } from "../../../entities/tape"
+import { Tape } from "../../../widgets/tape/tape"
 
 export const Feedbacks = () => {
   const { feedbacks } = useFeedBacks((state) => state)

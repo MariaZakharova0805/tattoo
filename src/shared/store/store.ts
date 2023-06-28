@@ -344,19 +344,45 @@ export const useGallery = create<Galley>(() => ({
         { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img2, imgSM: craig_img2_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img3, imgSM: lucky_img3_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img4, imgSM: mike_img4_lazy },
-        { id: nanoid(), job: 'tattoo', artist: 'Mike', img:  main_img4, imgSM:  main_img4_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img: main_img4, imgSM: main_img4_lazy },
         { id: nanoid(), job: 'piercing', artist: 'Jackie ', img: jackie_img6, imgSM: jackie_img6_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img5, imgSM: mike_img4_lazy },
         { id: nanoid(), job: 'piercing', artist: 'Jackie', img: jackie_img5, imgSM: jackie_img5_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img6, imgSM: mike_img6_lazy },
-        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img7, imgSM: lucky_img7_lazy},
+        { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img7, imgSM: lucky_img7_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img7, imgSM: craig_img7_lazy },
-        { id: nanoid(), job: 'tattoo', artist: 'Mike', img:  mike_img7, imgSM:  mike_img7_lazy },
+        { id: nanoid(), job: 'tattoo', artist: 'Mike', img: mike_img7, imgSM: mike_img7_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Craig', img: craig_img8, imgSM: craig_img8_lazy },
         { id: nanoid(), job: 'piercing', artist: 'Jackie', img: jackie_img3, imgSM: jackie_img3_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Craig', img: main_img5, imgSM: main_img5_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img8, imgSM: lucky_img8_lazy },
         { id: nanoid(), job: 'tattoo', artist: 'Lucky', img: lucky_img1, imgSM: lucky_img1_lazy },
- 
     ],
+}));
+
+
+interface ContactsFormVisibility {
+    formVisible: boolean
+    setFormVisible: (meaning: boolean) => void
+}
+
+export const useContactsFormVisibility = create<ContactsFormVisibility>()(
+    (set) => ({
+        formVisible: true,
+        setFormVisible: (meaning) => set(() => ({ formVisible: meaning })),
+    }),
+)
+
+interface Form {
+    formData: Object
+    setFormData: (newData: any) => void
+}
+
+export const useFormData = create<Form>((set) => ({
+    formData: [],
+    setFormData: (newData) => {
+        set(() => ({
+            formData: [newData],
+        }));
+    },
 }));

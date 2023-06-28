@@ -5,8 +5,8 @@ import { Container } from "../../shared/ui/container/container"
 import h2 from '../../../public/artists/h2_artists.svg'
 import { Header_H2 } from '../../shared/ui/text/text-h2'
 import { HeaderThin } from "../../shared/ui/text/text-header-thin"
-import { Tape } from '../../entities/tape'
-import { PageBottom } from '../../entities/page-footer'
+import { Tape } from '../../widgets/tape'
+import { PageBottom } from '../../widgets/page-footer'
 
 export const Artists = () => {
   const members = useMembers(state => state.members)

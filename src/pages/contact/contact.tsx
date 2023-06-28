@@ -2,12 +2,12 @@ import c from './contact.module.css'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Header_H2 } from "../../shared/ui/text/text-h2"
 import h2 from '../../../public/contact/h2_contacts.svg'
-import { PageBottom } from "../../entities/page-footer/page-footer"
+import { PageBottom } from "../../widgets/page-footer/page-footer"
 import { Container } from '../../shared/ui/container/container'
 import { Link } from '../../shared/ui/link/link'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Header_H3 } from '../../shared/ui/text/text-h3'
-import { Iframe } from '../../entities/iframe';
+import { Iframe } from '../../widgets/iframe';
 import { useContacts } from '../../shared/store';
 
 

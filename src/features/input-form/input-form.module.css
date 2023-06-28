@@ -22,7 +22,8 @@
 }
 
 .form_item input,
-.form_item select {
+.form_item select,
+.form_item textarea {
     width: 100%;
     background-color: var(--bg-main);
     border: none;
@@ -37,11 +38,6 @@
 .form_item input {
     cursor: text;
 }
-
-.form_item select {
-    cursor: pointer;
-}
-
 .form_item_message input:active,
 .form_item_message input:hover,
 .form_item_message input:focus,
@@ -51,10 +47,28 @@
     border-bottom: 0.1em solid var(--grey-middle);
 }
 
+/* textarea Input */
+.form_item textarea {
+    resize: none;
+    height: 50px;
+    overflow: hidden;
+}
+
+.form_item textarea:active,
+.form_item textarea:hover,
+.form_item_message input:focus {
+    border-bottom: 0.1em solid var(--grey-middle);
+    height: 400px;
+}
+
+/* Select inputs */
 .select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
+}
+.form_item select {
     cursor: pointer;
 }
 
@@ -72,6 +86,35 @@
     color: var(--white);
     background-color: #191B1D;
 }
+
+/* Input type file */
+.form_right .form_item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+/* 
+.form_right .form_item input {
+    border-bottom: none;
+    padding: 0;
+    overflow: hidden;
+    color: black;
+    height: 32px;
+    width: 32px;
+}
+
+.custom_file_input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom_file_input::before {
+    content: url(../../../public/svg/file-add.svg);
+    display: inline-block;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+} */
+
 
 /* Button */
 .btn {
@@ -152,3 +195,4 @@
         font-size: 32px;
     }
 }
+

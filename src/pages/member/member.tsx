@@ -7,7 +7,7 @@ import { useMembers } from '../../shared/store';
 import { Header_H2 } from "../../shared/ui/text/text-h2"
 import { Container } from "../../shared/ui/container/container";
 import { Header_H3 } from "../../shared/ui/text/text-h3";
-import { PageBottom } from "../../entities/page-footer/page-footer";
+import { PageBottom } from "../../widgets/page-footer/page-footer";
 import { Link } from "../../shared/ui/link/link";
 import { SwiperItem } from "../../entities/swiper";
 

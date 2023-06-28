@@ -5,13 +5,14 @@ import { Header_H2 } from "../../shared/ui/text/text-h2"
 import h2 from '../../../public/faq/h2_faq.svg'
 import img from '../../../public/faq/img.jpg'
 import img_lazy from '../../../public/faq/img_lazy.jpg'
-import { PageBottom } from "../../entities/page-footer/page-footer"
-import { TapeBlack } from "../../entities/tape/tape-black"
+import { PageBottom } from "../../widgets/page-footer/page-footer"
+import { TapeBlack } from "../../widgets/tape/tape-black"
 import { HeaderThin } from '../../shared/ui/text/text-header-thin'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Container } from '../../shared/ui/container/container'
 import { useFaq } from '../../shared/store'
 import { DropDownItem } from '../../entities/drop-down-item'
+
 export const Faq = () => {
   const questions = useFaq(state => state.questions)
   return (

@@ -19,10 +19,37 @@
     margin-top: -100px;
 }
 
-@media (min-width:768px) {}
+/* Shown block after form is filled */
+.block_finish {
+    margin: 34px 10px 210px;
+    margin-bottom: 210px;
+}
+
+.block_finish h3 {
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+.block_finish_header {
+    color: var(--white);
+    text-align: center;
+    font-size: 22px;
+    font-family: Hind-Vadodara;
+    margin-bottom: 8px;
+}
+
+@media (min-width:768px) {
+    .block_finish {
+        margin: 34px auto 210px;
+    }
+}
 
 @media (min-width:1600px) {
     .block_tape {
         margin-top: -50px;
     }
+}
+
+.block_hidden {
+    display: none;
 }
