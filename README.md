@@ -8,6 +8,7 @@ Tattoo and piercing website
 - Animation
 - Picture slider
 - Sending a pre-appointment details by mail from the site
+- Feature-Sliced Design
 
 ## Deploy
 <a href="https://tattoo-ten.vercel.app/" target="_blank">destin-tattoo.com</a>
