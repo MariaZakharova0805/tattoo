@@ -9,6 +9,8 @@ import { NavbarDropDown } from '../widgets/navbar-drop-down/navbar-drop-down';
 import { NavbarHeader } from '../widgets/navbar-header/navbar-header';
 import { Burger } from '../entities/burger';
 import { Logo } from '../entities/logo';
+import { ThemeProvider } from '@mui/material/styles';
+import { darkTheme } from './style/theme';
 type Anchor = 'top';
 
 
@@ -42,29 +44,29 @@ function App() {
   );
 
   return (
-
-    <div>
-      <React.Fragment key={'top'}>
-        <Drawer
-          anchor={'top'}
-          open={state['top']}
-          onClose={toggleDrawer('top', false)}
-        >
-          {list('top')}
-        </Drawer>
-        <div className='App'>
-          <ScrollToTop />
-          <div className='header'>
-            <Logo/>
-            <NavbarHeader />
-            <Burger onClick={toggleDrawer('top', true)} />
+    <ThemeProvider theme={darkTheme}>
+      <div>
+        <React.Fragment key={'top'}>
+          <Drawer
+            anchor={'top'}
+            open={state['top']}
+            onClose={toggleDrawer('top', false)}
+          >
+            {list('top')}
+          </Drawer>
+          <div className='App'>
+            <ScrollToTop />
+            <div className='header'>
+              <Logo />
+              <NavbarHeader />
+              <Burger onClick={toggleDrawer('top', true)} />
+            </div>
+            <div className='App_content'><Outlet /></div>
+            <Footer />
           </div>
-          <div className='App_content'><Outlet /></div>
-          <Footer />
-        </div>
-      </React.Fragment>
-    </div>
-
+        </React.Fragment>
+      </div>
+    </ThemeProvider>
   );
 }
 export default App

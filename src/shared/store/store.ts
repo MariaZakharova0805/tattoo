@@ -386,3 +386,17 @@ export const useFormData = create<Form>((set) => ({
         }));
     },
 }));
+
+interface TriangleVisible {
+    isVisible: boolean
+    setIsVisible: (visibility: boolean) => void
+}
+
+export const useTriangleVisible = create<TriangleVisible>((set) => ({
+    isVisible: true,
+    setIsVisible: (visibility) => {
+        set(() => ({
+            isVisible: visibility,
+        }));
+    },
+}));

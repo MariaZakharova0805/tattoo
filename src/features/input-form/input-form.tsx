@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import c from './input-form.module.css'
 import { useForm, SubmitHandler } from "react-hook-form"
 import arrow from '../../../public/svg/arrow_red.svg'
+import TextField from '@mui/material/TextField';
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { useFormData, useContactsFormVisibility } from '../../shared/store'
 import emailjs from "@emailjs/browser";
@@ -55,28 +56,38 @@ export const InputForm = () => {
     useEffect(() => {
         watch((value) => {
             setFormData(value)
+            console.log(value)
         });
     }, [watch]);
 
     return (
         //@ts-ignore
-        <form ref={form} onSubmit={handleSubmit(onSubmit)} >
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={c.from}>
             <div className={c.form}>
                 <div className={c.form_left}>
                     <div className={c.form_item}>
-                        <label>Your name</label>
-                        <input {...register("name")} />
+                        <TextField
+                            color='secondary'
+                            label="Your name" variant="standard" placeholder='Emma' {...register("name", { required: true })} />
                     </div>
                     <div className={c.form_item}>
-                        <label>E-mail</label>
-                        <input {...register("email", { required: true })} />
+                        <TextField
+                            color='secondary'
+                            label="E-mail" variant="standard" placeholder='Emma37@gmal.com ' {...register("email", { required: true })} />
                         {errors.email && <span>This field is required</span>}
                     </div>
                     <div className={c.form_item}>
-                        <label>Phone number</label>
-                        <input {...register("phone")} />
+                        <TextField
+                            color='secondary'
+                            label="Phone number" variant="standard" placeholder='+1 850 450 53 67' {...register("phone", { required: true })} />
                     </div>
-                    <div className={c.form_item}>
+                    <select {...register("service")} className={c.select}>
+                        <label>Select a service</label>
+                        <option value="tattoo">tattoo</option>
+                        <option value="piercing">piercing</option>
+                    </select>
+
+                    {/* <div className={c.form_item}>
                         <label>Select a service</label>
                         <select {...register("service")} className={c.select}>
                             <option className={c.option} value="tattoo">tattoo</option>
@@ -92,18 +103,8 @@ export const InputForm = () => {
                             <option className={c.option} value="Jackie">JACKIE piercing</option>
                             <option className={c.option} value="Lucky">LUCKY tattoo</option>
                         </select>
-                    </div>
+                    </div> */}
                 </div>
-                <div className={c.form_right}>
-                    <div className={c.form_item}>
-                        <div className={c.form_item_textarea}>
-                            <label>Any questions? Have an ideas and image? Show us! Write your message if you wish </label>
-                            <textarea {...register("message")} placeholder='Hi!' />
-                        </div>
-                        {/* <div className={c.img_input}>
-                            <input {...register("picture")} type="file" className={c.custom_file_input} />
-                        </div> */}
-                    </div></div>
             </div>
             <div className={c.form_footer}>
                 <div className={c.form_footer_text}>
@@ -116,4 +117,6 @@ export const InputForm = () => {
         </form>
     )
 }
+
+
 

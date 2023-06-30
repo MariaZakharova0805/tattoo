@@ -14,7 +14,8 @@ export const Tattoo = () => {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
       className={c.block}>
-      <div className={c.block_header}>
+      <div className={c.block_header}
+      >
         <img className={c.block_header__img1} src={svg_tattoo} />
         <img className={c.block_header__img2} src={svg_tattoo2} />
         <img className={c.block_header__img3} src={svg_tattoo} />

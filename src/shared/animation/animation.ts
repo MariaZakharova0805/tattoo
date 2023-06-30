@@ -25,10 +25,11 @@ export const textBottomToTopAnimation: Variants = {
         y: 0,
         transition: {
             type: "spring",
-            duration: 4
+            duration: 3
         }
     }
 };
+
 
 
 export const triangleAnimation: Variants = {
@@ -41,7 +42,23 @@ export const triangleAnimation: Variants = {
         opacity: 0,
         transition: {
             type: "spring",
-            duration: 8
+            bounce: 0,
+            duration: 8,
+            delay: 2
+        }
+    }
+};
+
+export const HideBlock: Variants = {
+    offscreen: {
+        x: 0,
+        opacity: 1
+    },
+    onscreen: {
+        x: 1600,
+        transition: {
+            type: "spring",
+            duration: 15
         }
     }
 };

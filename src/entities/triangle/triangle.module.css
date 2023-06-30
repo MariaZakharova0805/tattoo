@@ -1,0 +1,39 @@
+.top_triangle {
+    height: 249px;
+}
+
+.top_triangle_img {
+    position: fixed;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (min-width: 360px) {
+    .top_triangle_img {
+        top: 400px;
+    }
+}
+@media (min-width: 576px) {
+    .top_triangle_img {
+        top: 350px;
+    }
+}
+@media (min-width: 768px) {
+
+    .top_triangle {
+        height: 442px;
+    }
+    .top_triangle_img {
+        top: 500px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .top_triangle {
+        height: 408px;
+    }
+    .top_triangle_img {
+        top: 700px;
+    }
+}

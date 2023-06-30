@@ -5,7 +5,7 @@ import { About } from "./3_about"
 import { Tattoo } from "./4_tattoo"
 import { Piercing } from "./5_piercing"
 import { Feedbacks } from "./6_feedbacks"
-export const Main = () => { 
+export const Main = () => {
   return (
     <>
       <TopPart />
@@ -14,7 +14,7 @@ export const Main = () => {
       <Tattoo />
       <Piercing />
       <Feedbacks />
-      <PageBottom/>
+      <PageBottom />
     </>
   )
 }
