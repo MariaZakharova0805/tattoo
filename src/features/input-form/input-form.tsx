@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { SetStateAction, useEffect, useRef, useState } from 'react'
 import c from './input-form.module.css'
 import { useForm, SubmitHandler } from "react-hook-form"
 import arrow from '../../../public/svg/arrow_red.svg'
@@ -18,6 +18,17 @@ type Inputs = {
 }
 
 export const InputForm = () => {
+    const [serviceItem, setServiceItem] = useState('');
+
+    const chooseValue = (value: SetStateAction<string>) => {
+        setServiceItem(value)
+    }
+    const [artistName, setArtistName] = useState('any');
+
+    const chooseArtistName = (value: SetStateAction<string>) => {
+        setArtistName(value)
+    }
+
     const setFormData = useFormData(state => state.setFormData)
     const setFormVisible = useContactsFormVisibility(state => state.setFormVisible)
     const form = useRef();
@@ -81,29 +92,29 @@ export const InputForm = () => {
                             color='secondary'
                             label="Phone number" variant="standard" placeholder='+1 850 450 53 67' {...register("phone", { required: true })} />
                     </div>
-                    <select {...register("service")} className={c.select}>
-                        <label>Select a service</label>
-                        <option value="tattoo">tattoo</option>
-                        <option value="piercing">piercing</option>
-                    </select>
-
-                    {/* <div className={c.form_item}>
-                        <label>Select a service</label>
-                        <select {...register("service")} className={c.select}>
-                            <option className={c.option} value="tattoo">tattoo</option>
-                            <option className={c.option} value="piercing">piercing</option>
-                        </select>
+                    {/* Choosing servise */}
+                    <div className={c.form_item}>
+                        <TextField
+                            value={serviceItem}
+                            color='secondary'
+                            label="Select a service" variant="standard" {...register("service")} />
+                        <div className={c.select_block}>
+                            <div className={c.select_block_item} onClick={() => chooseValue('tattoo')}><p>Tattoo</p><span className={c.select_block_item_tag}></span></div>
+                            <div className={c.select_block_item} onClick={() => chooseValue('piercing')}><p>Piercing</p><span className={c.select_block_item_tag}></span></div>
+                        </div>
                     </div>
                     <div className={c.form_item}>
-                        <label>Select an artist of your choice if you wish</label>
-                        <select {...register("artist")} className={c.select}>
-                            <option className={c.option} value="any">any</option>
-                            <option className={c.option} value="Mike">MIKE tattoo</option>
-                            <option className={c.option} value="Craig">CRAIG tattoo</option>
-                            <option className={c.option} value="Jackie">JACKIE piercing</option>
-                            <option className={c.option} value="Lucky">LUCKY tattoo</option>
-                        </select>
-                    </div> */}
+                        <TextField
+                            value={artistName}
+                            color='secondary'
+                            label="Select an artist of your choice if you wish" variant="standard" {...register("artist")} />
+                        <div className={c.select_block}>
+                            <div className={c.select_block_item} onClick={() => chooseArtistName('MIKE')}><p>MIKE tattoo</p><span className={c.select_block_item_tag}></span></div>
+                            <div className={c.select_block_item} onClick={() => chooseArtistName('CRAIG')}><p>CRAIG tattoo</p><span className={c.select_block_item_tag}></span></div>
+                            <div className={c.select_block_item} onClick={() => chooseArtistName('LUCKY')}><p>LUCKY tattoo</p><span className={c.select_block_item_tag}></span></div>
+                            <div className={c.select_block_item} onClick={() => chooseArtistName('JACKIE')}><p>JACKIE piercing</p><span className={c.select_block_item_tag}></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={c.form_footer}>
