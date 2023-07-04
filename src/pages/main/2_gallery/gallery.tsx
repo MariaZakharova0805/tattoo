@@ -10,7 +10,7 @@ export const Gallery = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{duration: 6}}
+            transition={{duration: 4, delay: 1}}
             className={c.gallary}>
             {imgs.map((img: IImgs) => {
                 return (<div key={img.id} className={c.gallary_item}>

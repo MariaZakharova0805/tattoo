@@ -24,4 +24,3 @@ export const TapeBlack: FC<TapeGreyProps> = ({ text1, text2, transform }) => {
     )
 }
 
-// style={{ transform }}
