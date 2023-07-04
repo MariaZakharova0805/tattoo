@@ -1,15 +1,18 @@
 .container {
-    width: 100%;
-    padding: 0 24px;
+    width: 86%;
+    margin: 0 auto;
 }
 
-@media (min-width:768px) {
+@media (min-width:786px) {
     .container {
-        padding: 0 80px;
+        width: 79%;
     }
 }
+
 @media (min-width:1600px) {
     .container {
-        padding: 0 100px;
+        width: 87%;
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }

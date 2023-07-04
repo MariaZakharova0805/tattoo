@@ -7,6 +7,7 @@ export const textLeftToRightAnimation: Variants = {
     },
     onscreen: {
         x: 0,
+        rotate: -10,
         opacity: 1,
         transition: {
             type: "spring",
@@ -52,13 +53,14 @@ export const triangleAnimation: Variants = {
 export const HideBlock: Variants = {
     offscreen: {
         x: 0,
-        opacity: 1
+        opacity: 1,
     },
     onscreen: {
-        x: 1600,
+        x: 2600,
         transition: {
             type: "spring",
-            duration: 15
+            duration: 15,
+
         }
     }
 };

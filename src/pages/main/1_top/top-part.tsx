@@ -14,7 +14,8 @@ export const TopPart = () => {
             className={c.section}>
             <Container>
                 <Header_H1>Destin Tattoo</Header_H1>
-                <motion.div variants={HideBlock} className={c.hideBlock_big}></motion.div>
+                <motion.div variants={HideBlock} className={c.hideBlock} style={{ transform: "skew(15deg, 15deg)" }}>
+                </motion.div>
                 <div className={c.top_h3}>Tattoos & Pircings</div>
                 <p className={c.top_text}>Destin Tattoo Company -  Destin Beach's' premier body art studio.
                     All styles of tattooing and piercing, flash and custom designs. Highly qualified staff and friendly atmosphere.</p>

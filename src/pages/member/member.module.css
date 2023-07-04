@@ -4,6 +4,7 @@
 
 .member {
     margin-bottom: 66px;
+
 }
 
 .member_texts_text h3 {
@@ -16,6 +17,10 @@
 
 .member_texts_text,
 .member_texts_social {
+    margin-bottom: 20px;
+}
+
+.grid_style {
     margin-bottom: 20px;
 }
 
@@ -41,7 +46,24 @@
 
     .member_texts_text {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "name style" "about about" "social";
+    }
+
+    .grid_name {
+        grid-area: "name";
+        margin-bottom: 23px;
+    }
+
+    .grid_style {
+        grid-area: "style";
+    }
+
+    .grid_about {
+        grid-area: "about";
+    }
+
+    .member_texts_social {
+        grid-area: "social";
     }
 
     .member_texts_text,

@@ -38,7 +38,7 @@
 .h3_white {
     font-family: Impact;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 33.6px;
     color: var(--grey-light);
     text-transform: uppercase;
@@ -72,7 +72,7 @@
 
     .h3_red,
     .h3_white {
-        font-size: 48px;
+        font-size: 36px;
         line-height: 50.4px;
     }
 

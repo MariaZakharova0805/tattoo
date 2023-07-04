@@ -16,7 +16,7 @@ export const DropDownItem: FC<DropDownItemProps> = ({ header, text }) => {
     return (
         <section className={c.item}>
             <div className={c.item_header}>
-                <div className={c.item_header_text}>{header}</div>
+                <div className={c.item_header_text} onClick={openAnswer}>{header}</div>
                 <div className={open ? c.item_header_btn_hidden : c.item_header_btn} onClick={openAnswer}>
                     <img src={arrow} alt="open text" />
                 </div> 

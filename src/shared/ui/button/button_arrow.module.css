@@ -1,5 +1,5 @@
 .btn {
-    background-color: var(--bg-color);
+    background: transparent;
     cursor: pointer;
     transition: 0.5s;
     width: fit-content;

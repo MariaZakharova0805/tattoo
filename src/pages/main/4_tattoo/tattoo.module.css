@@ -1,14 +1,16 @@
 .block {
     margin-bottom: 152px;
 }
+
 .block_header {
     display: flex;
     flex-direction: row;
-    transform: rotate(-3deg) !important;
+    transform: rotate(-3deg);
     overflow: hidden;
     margin-left: -25%;
     margin-bottom: -20px;
 }
+
 .block_header__img1,
 .block_header__img3,
 .block_header__img5,
@@ -16,21 +18,25 @@
     width: 145px;
     margin-right: 16px;
 }
+
 .block_header__img2,
 .block_header__img4,
 .block_header__img6 {
     width: 86px;
     margin-right: 16px;
 }
+
 .block_header img:last-child {
     margin: 0;
 }
+
 .block_text {
     background: right top / contain no-repeat url('../../../../public/main/tattoo_img.jpg');
-    padding-top: 230px;
+    padding-top: 120px;
     z-index: 2;
     position: relative;
 }
+
 .block_footer {
     display: flex;
     flex-direction: row;
@@ -38,10 +44,12 @@
     justify-content: space-between;
     margin-top: 32px;
 }
+
 @media (min-width: 768px) {
     .block {
         margin-bottom: 208px;
     }
+
     .block_footer {
         margin-top: 56px;
     }
@@ -53,26 +61,34 @@
         width: 212px;
         margin-right: 51px;
     }
+
     .block_header__img2,
     .block_header__img4,
     .block_header__img6 {
         width: 146.51px;
         margin-right: 51px;
     }
+
     .block_text {
-        width: 90%;
-        background-size: 70%;
+        background: right top / contain no-repeat url('../../../../public/main/tatto768.jpg');
+        width: 80%;
+        margin: 0 auto;
+        background-size: 85%;
         background-position: left top;
-        margin-left: 5%;
-        padding: 0;
+        padding-top: 339px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
+
     .block_texts {
-        width: 60%;
-        margin-left: 40%;
-        padding-top: 30%;
+        margin-left: 15%;
     }
 }
+
+
 @media (min-width: 1278px) {
+
     .block_header__img1,
     .block_header__img3,
     .block_header__img5,
@@ -80,20 +96,36 @@
         width: 287px;
         margin-right: 148px;
     }
+
     .block_header__img2,
     .block_header__img4,
     .block_header__img6 {
         width: 203px;
         margin-right: 148px;
     }
+
 }
+
 @media (min-width: 1600px) {
     .block {
-        margin-bottom: 168px;
+        margin: 0 auto 186px;
+        max-width: 1600px;
     }
+
+    .block_text {
+        background: left top / 75% no-repeat url('../../../../public/main/tattoo1600.jpg');
+        width: 90%;
+        margin-left: 6%;
+        max-width: 1600px;
+        padding-top: 380px;
+    }
+
     .block_texts {
-        padding-top: 35%;
+        padding: 0;
+        width: 50%;
+        margin-left: 40%;
     }
+
     .block_footer {
         margin-top: 64px;
     }

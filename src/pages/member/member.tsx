@@ -26,16 +26,24 @@ export const Member = () => {
                                 <div className={c.member}>
                                     <div className={c.member_texts}>
                                         <div className={c.member_texts_text}>
-                                            <div>
+                                            <div className={c.grid_name}>
                                                 <Header_H3>{member.name}</Header_H3>
-                                                <TextRegular>{member.job}</TextRegular></div>
-                                            <TextRegular>Style: <br /> {member.style.map(item => {
-                                                return <span className={c.flex_right_text} key={item.id}>{item.text}<br /></span>
-                                            })}</TextRegular>
+                                                <TextRegular>{member.job}</TextRegular>
+                                            </div>
+                                            <div className={c.grid_style}>
+                                                <TextRegular>Style: <br /> {member.style.map(item => {
+                                                    return <span key={item.id}>{item.text}<br /></span>
+                                                })}</TextRegular>
+                                            </div>
+                                            <div className={c.grid_about}>
+                                                {member.texts.map(item => {
+                                                    return <TextRegular key={item.id}>{item.text}<br /></TextRegular>
+                                                })}
+                                            </div>
                                         </div>
                                         <div className={c.member_texts_social}>
                                             <TextRegular>
-                                                <Link href={member.instagram}>Instagram</Link><br/>
+                                                <Link href={member.instagram}>Instagram</Link><br />
                                                 <Link href={member.instagram}>Facebook</Link>
                                             </TextRegular>
                                         </div>
