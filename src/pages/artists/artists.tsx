@@ -22,7 +22,7 @@ export const Artists = () => {
           })}
         </div>
       </Container>
-      <Tape text1="Contact Us" text2="Contact Us" />
+      <div className={c.block_tape}><Tape text1="Contact Us" text2="Contact Us" /></div>
       <PageBottom />
     </div>
   )

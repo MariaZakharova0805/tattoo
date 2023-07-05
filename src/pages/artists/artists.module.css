@@ -1,10 +1,11 @@
 .section {
     width: 100vw;
-    position: relative;
+
 }
 
-.section * {
+.block_tape {
     position: relative;
+    overflow: hidden;
 }
 
 .header {
