@@ -14,15 +14,33 @@
     margin-bottom: 68px;
 }
 
+.tape {
+    margin-bottom: -140px;
+}
 
-@media (min-width:786px) {
+@media (min-width:360px) {
+    .tape {
+        margin-bottom: -100px;
+    }
+}
+
+@media (min-width:768px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 100px;
     }
+
+    .tape {
+        margin-bottom: 0px;
+    }
 }
 
 @media (min-width:1600px) {
+    .section {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
     .tape {
         margin-top: 164px;
     }

@@ -16,7 +16,7 @@
 .item {
     width: fit-content;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 67.2px;
     font-family: "Impact", Arial, sans-serif;
 }
@@ -57,4 +57,10 @@
 .link:hover:after,
 .link:focus:after {
     width: 100%;
+}
+
+@media (min-width:360px) {
+    .item {
+        font-size: 48px;
+    }
 }

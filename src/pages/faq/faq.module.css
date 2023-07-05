@@ -15,27 +15,23 @@
     margin-bottom: 10px;
 }
 
-.tape {
-    margin-top: -400px;
-    margin-bottom: 384px;
-}
-
 .question,
 .img {
     margin-bottom: 168px;
 }
 
-@media (min-width:1200px) {
+.tape {
+    margin-bottom: -100px;
+}
+
+@media (min-width:768px) {
     .tape {
-        margin-top: -200px;
+        margin: 100px 0 -60px;
     }
 }
 
-@media (min-width:1600px) {
+@media (min-width:768px) {
     .tape {
-        margin-top: 0;
-        margin-bottom: 100px;
+        margin: 140px 0 -100px;
     }
-
-
 }
