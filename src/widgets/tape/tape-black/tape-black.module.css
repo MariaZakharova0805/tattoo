@@ -1,6 +1,5 @@
 .block {
     height: 240px;
-    padding-top: 260px;
     transform: rotate(10deg);
     background-color: transparent;
   }
@@ -66,14 +65,12 @@
 
 @media (min-width:1200px) {
     .block {
-        padding-top: 200px;
         margin-bottom: 100px;
     }
 }
 
 @media (min-width:1600px) {
     .block {
-        padding-top: 20px;
         margin-bottom: 100px;
     }
 }

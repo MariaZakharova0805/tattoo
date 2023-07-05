@@ -1,7 +1,10 @@
 import c from './contact.module.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Header_H2 } from "../../shared/ui/text/text-h2"
+import map from '../../../public/contact/Map.jpg'
+import map_lazy from '../../../public/contact/MapSM.jpg'
 import h2 from '../../../public/contact/h2_contacts.svg'
+import { Header_H2 } from "../../shared/ui/text/text-h2"
 import { PageBottom } from "../../widgets/page-footer/page-footer"
 import { Container } from '../../shared/ui/container/container'
 import { Link } from '../../shared/ui/link/link'
@@ -13,7 +16,9 @@ import { useContacts } from '../../shared/store';
 
 export const Contact = () => {
   const { contactLinks, socialLinks } = useContacts(state => state)
-
+  function changeOpacity() {
+    console.log(1)
+  }
 
   return (
     <section className={c.section}>
@@ -45,7 +50,16 @@ export const Contact = () => {
           </div>
         </div>
       </Container>
-      <Iframe />
+      <div className={c.map} onClick={() => changeOpacity()}>
+        <div className={c.map_iframe}><Iframe /></div>
+        <LazyLoadImage
+          alt="map iframe"
+          effect="blur"
+          src={map}
+          placeholderSrc={map_lazy}
+          className={c.map_img}
+        />
+      </div>
       <PageBottom />
     </section>
   )

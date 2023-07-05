@@ -20,6 +20,31 @@
     margin-bottom: 40px;
 }
 
+.map {
+    width: 100%;
+    margin-bottom: 100%;
+    display: grid;
+    position: relative;
+}
+
+.map_img {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.map_img_hidden {
+    opacity: 0;
+}
+
+.map_iframe {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
 
 @media (min-width:768px) {
     .top {
@@ -43,5 +68,13 @@
 
     .top_right {
         align-items: flex-end;
+    }
+
+}
+
+@media (min-width:1600px) {
+    .map {
+        max-width: 1600px;
+        margin: 0 auto 75%;
     }
 }

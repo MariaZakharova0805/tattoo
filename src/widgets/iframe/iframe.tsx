@@ -6,7 +6,7 @@ export const Iframe = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 style={{ border: 0 }}>
-            </iframe>
+            </iframe >
         </div>
     )
 }

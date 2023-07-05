@@ -17,7 +17,6 @@
     .feedbacks {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 28px;
         margin-bottom: 211px;
     }
 }
@@ -26,5 +25,6 @@
     .feedbacks {
         margin-bottom: 336px;
         margin-top: -320px;
+        gap: 24px;
     }
 }
