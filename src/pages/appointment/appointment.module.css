@@ -1,3 +1,9 @@
+.section {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
 .header {
     margin-bottom: 86px;
 }
@@ -25,18 +31,19 @@
     margin-bottom: 8px;
 }
 
-.block_tape {
-    position: relative;
-    overflow: hidden;
-}
+
 
 @media (min-width:768px) {
     .block_finish {
         margin: 34px auto 210px;
     }
+
+
 }
 
 @media (min-width:1600px) {}
+
+
 
 .block_hidden {
     display: none;
