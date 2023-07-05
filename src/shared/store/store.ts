@@ -1,116 +1,114 @@
 import { create } from 'zustand';
 import { nanoid } from 'nanoid'
 import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts, IImage } from './model';
-import main_img1 from "../../../public/main/img1.jpg"
-import main_img1_lazy from "../../../public/main/img1_lazy.jpg"
-import main_img2 from "../../../public/main/img2.jpg"
-import main_img2_lazy from "../../../public/main/img2_lazy.jpg"
-import main_img3 from "../../../public/main/img3.jpg"
-import main_img3_lazy from "../../../public/main/img3_lazy.jpg"
-import main_img4 from "../../../public/main/img4.jpg"
-import main_img4_lazy from "../../../public/main/img4_lazy.jpg"
-import main_img5 from "../../../public/main/img5.jpg"
-import main_img5_lazy from "../../../public/main/img5_lazy.jpg"
-import main_img6 from "../../../public/main/img6.jpg"
-import main_img6_lazy from "../../../public/main/img6_lazy.jpg"
-import feedback_img1 from "../../../public/main/feedback_img1.jpg"
-import feedback_img1_lazy from "../../../public/main/feedback_img1_lazy.jpg"
-import feedback_img2 from "../../../public/main/feedback_img2.jpg"
-import feedback_img2_lazy from "../../../public/main/feedback_img2_lazy.jpg"
-import feedback_img3 from "../../../public/main/feedback_img3.jpg"
-import feedback_img3_lazy from "../../../public/main/feedback_img3_lazy.jpg"
-import feedback_img1_sm from "../../../public/main/feedback_img1_sm.jpg"
-import feedback_img1_sm_lazy from "../../../public/main/feedback_img1_sm_lazy.jpg"
-import feedback_img2_sm from "../../../public/main/feedback_img2_sm.jpg"
-import feedback_img2_sm_lazy from "../../../public/main/feedback_img2_sm_lazy.jpg"
-import feedback_img3_sm from "../../../public/main/feedback_img3_sm.jpg"
-import feedback_img3_sm_lazy from "../../../public/main/feedback_img3_sm_lazy.jpg"
+import main_img1 from "../../assets/main/img1.jpg"
+import main_img1_lazy from "../../assets/main/img1_lazy.jpg"
+import main_img2 from "../../assets/main/img2.jpg"
+import main_img2_lazy from "../../assets/main/img2_lazy.jpg"
+import main_img3 from "../../assets/main/img3.jpg"
+import main_img3_lazy from "../../assets/main/img3_lazy.jpg"
+import main_img4 from "../../assets/main/img4.jpg"
+import main_img4_lazy from "../../assets/main/img4_lazy.jpg"
+import main_img5 from "../../assets/main/img5.jpg"
+import main_img5_lazy from "../../assets/main/img5_lazy.jpg"
+import main_img6 from "../../assets/main/img6.jpg"
+import main_img6_lazy from "../../assets/main/img6_lazy.jpg"
+
+import feedback_img1 from "../../assets/main/feedback_img1.jpg"
+import feedback_img1_lazy from "../../assets/main/feedback_img1_lazy.jpg"
+import feedback_img2 from "../../assets/main/feedback_img2.jpg"
+import feedback_img2_lazy from "../../assets/main/feedback_img2_lazy.jpg"
+import feedback_img3 from "../../assets/main/feedback_img3.jpg"
+import feedback_img3_lazy from "../../assets/main/feedback_img3_lazy.jpg"
+import feedback_img1_sm from "../../assets/main/feedback_img1_sm.jpg"
+import feedback_img1_sm_lazy from "../../assets/main/feedback_img1_sm_lazy.jpg"
+import feedback_img2_sm from "../../assets/main/feedback_img2_sm.jpg"
+import feedback_img2_sm_lazy from "../../assets/main/feedback_img2_sm_lazy.jpg"
+import feedback_img3_sm from "../../assets/main/feedback_img3_sm.jpg"
+import feedback_img3_sm_lazy from "../../assets/main/feedback_img3_sm_lazy.jpg"
 // Mike +
-import member_mike from "../../../public/artists/mike/mike.jpg"
-import member_mike_lazy from "../../../public/artists/mike/mike_lazy.jpg"
-import mike_header from '../../../public/artists/mike/h2_mike.svg'
-import mike_header_lazy from '../../../public/artists/mike/h2_mike-lazy.svg'
-import mike_img1 from "../../../public/artists/mike/mike_img1.jpg"
-import mike_img1_lazy from "../../../public/artists/mike/mike_img1_lazy.jpg"
-import mike_img2 from "../../../public/artists/mike/mike_img2.jpg"
-import mike_img2_lazy from "../../../public/artists/mike/mike_img2_lazy.jpg"
-import mike_img3 from "../../../public/artists/mike/mike_img3.jpg"
-import mike_img3_lazy from "../../../public/artists/mike/mike_img3_lazy.jpg"
-import mike_img4 from "../../../public/artists/mike/mike_img4.jpg"
-import mike_img4_lazy from "../../../public/artists/mike/mike_img4_lazy.jpg"
-import mike_img5 from "../../../public/artists/mike/mike-img5.jpg"
-import mike_img5_lazy from "../../../public/artists/mike/mike-img5_lazy.jpg"
-import mike_img6 from "../../../public/artists/mike/mike_img6.jpg"
-import mike_img6_lazy from "../../../public/artists/mike/mike_img6_lazy.jpg"
-import mike_img7 from "../../../public/artists/mike/mike_img7.jpg"
-import mike_img7_lazy from "../../../public/artists/mike/mike_img7_lazy.jpg"
+import member_mike from "../../assets/artists/mike/mike.jpg"
+import member_mike_lazy from "../../assets/artists/mike/mike_lazy.jpg"
+import mike_header from '../../assets/artists/mike/h2_mike.svg'
+import mike_header_lazy from '../../assets/artists/mike/h2_mike-lazy.svg'
+
+import mike_img2 from "../../assets/artists/mike/mike_img2.jpg"
+import mike_img2_lazy from "../../assets/artists/mike/mike_img2_lazy.jpg"
+import mike_img3 from "../../assets/artists/mike/mike_img3.jpg"
+import mike_img3_lazy from "../../assets/artists/mike/mike_img3_lazy.jpg"
+import mike_img4 from "../../assets/artists/mike/mike_img4.jpg"
+import mike_img4_lazy from "../../assets/artists/mike/mike_img4_lazy.jpg"
+import mike_img5 from "../../assets/artists/mike/mike-img5.jpg"
+import mike_img5_lazy from "../../assets/artists/mike/mike-img5_lazy.jpg"
+import mike_img6 from "../../assets/artists/mike/mike_img6.jpg"
+import mike_img6_lazy from "../../assets/artists/mike/mike_img6_lazy.jpg"
+import mike_img7 from "../../assets/artists/mike/mike_img7.jpg"
+import mike_img7_lazy from "../../assets/artists/mike/mike_img7_lazy.jpg"
 
 // Craig +
-import member_craig from "../../../public/artists/craig/craig.jpg"
-import member_craig_lazy from "../../../public/artists/craig/craig_lazy.jpg"
-import craig_header from '../../../public/artists/craig/h2_craig.svg'
-import craig_header_lazy from '../../../public/artists/craig/h2_craig-lazy.svg'
-import craig_img1 from "../../../public/artists/craig/craig_img1.jpg"
-import craig_img1_lazy from "../../../public/artists/craig/craig_img1_lazy.jpg"
-import craig_img2 from "../../../public/artists/craig/craig_img2.jpg"
-import craig_img2_lazy from "../../../public/artists/craig/craig_img2_lazy.jpg"
-import craig_img3 from "../../../public/artists/craig/craig_img3.jpg"
-import craig_img3_lazy from "../../../public/artists/craig/craig_img3_lazy.jpg"
-import craig_img4 from "../../../public/artists/craig/craig_img4.jpg"
-import craig_img4_lazy from "../../../public/artists/craig/craig_img4_lazy.jpg"
-import craig_img5 from "../../../public/artists/craig/craig_img5.jpg"
-import craig_img5_lazy from "../../../public/artists/craig/craig_img5_lazy.jpg"
-import craig_img6 from "../../../public/artists/craig/craig_img6.jpg"
-import craig_img6_lazy from "../../../public/artists/craig/craig_img6_lazy.jpg"
-import craig_img7 from "../../../public/artists/craig/craig_img7.jpg"
-import craig_img7_lazy from "../../../public/artists/craig/craig_img7_lazy.jpg"
-import craig_img8 from "../../../public/artists/craig/craig_img8.jpg"
-import craig_img8_lazy from "../../../public/artists/craig/craig_img8_lazy.jpg"
+import member_craig from "../../assets/artists/craig/craig.jpg"
+import member_craig_lazy from "../../assets/artists/craig/craig_lazy.jpg"
+import craig_header from '../../assets/artists/craig/h2_craig.svg'
+import craig_header_lazy from '../../assets/artists/craig/h2_craig-lazy.svg'
+
+import craig_img2 from "../../assets/artists/craig/craig_img2.jpg"
+import craig_img2_lazy from "../../assets/artists/craig/craig_img2_lazy.jpg"
+import craig_img3 from "../../assets/artists/craig/craig_img3.jpg"
+import craig_img3_lazy from "../../assets/artists/craig/craig_img3_lazy.jpg"
+import craig_img4 from "../../assets/artists/craig/craig_img4.jpg"
+import craig_img4_lazy from "../../assets/artists/craig/craig_img4_lazy.jpg"
+import craig_img5 from "../../assets/artists/craig/craig_img5.jpg"
+import craig_img5_lazy from "../../assets/artists/craig/craig_img5_lazy.jpg"
+import craig_img6 from "../../assets/artists/craig/craig_img6.jpg"
+import craig_img6_lazy from "../../assets/artists/craig/craig_img6_lazy.jpg"
+import craig_img7 from "../../assets/artists/craig/craig_img7.jpg"
+import craig_img7_lazy from "../../assets/artists/craig/craig_img7_lazy.jpg"
+import craig_img8 from "../../assets/artists/craig/craig_img8.jpg"
+import craig_img8_lazy from "../../assets/artists/craig/craig_img8_lazy.jpg"
 
 //Jackie
-import member_jackie from "../../../public/artists/jackie/jackie.jpg"
-import member_jackie_lazy from "../../../public/artists/jackie/jackie_lazy.jpg"
-import jackie_header from '../../../public/artists/jackie/h2_jackie.svg'
-import jackie_header_lazy from '../../../public/artists/jackie/h2_jackie-lazy.svg'
-import jackie_img1 from "../../../public/artists/jackie/jackie_img1.jpg"
-import jackie_img1_lazy from "../../../public/artists/jackie/jackie_img1_lazy.jpg"
-import jackie_img2 from "../../../public/artists/jackie/jackie_img2.jpg"
-import jackie_img2_lazy from "../../../public/artists/jackie/jackie_img2_lazy.jpg"
-import jackie_img3 from "../../../public/artists/jackie/jackie_img3.jpg"
-import jackie_img3_lazy from "../../../public/artists/jackie/jackie_img3_lazy.jpg"
-import jackie_img4 from "../../../public/artists/jackie/jackie_img4.jpg"
-import jackie_img4_lazy from "../../../public/artists/jackie/jackie_img4_lazy.jpg"
-import jackie_img5 from "../../../public/artists/jackie/jackie_img5.jpg"
-import jackie_img5_lazy from "../../../public/artists/jackie/jackie_img5_lazy.jpg"
-import jackie_img6 from "../../../public/artists/jackie/jackie_img6.jpg"
-import jackie_img6_lazy from "../../../public/artists/jackie/jackie_img6_lazy.jpg"
+import member_jackie from "../../assets/artists/jackie/jackie.jpg"
+import member_jackie_lazy from "../../assets/artists/jackie/jackie_lazy.jpg"
+import jackie_header from '../../assets/artists/jackie/h2_jackie.svg'
+import jackie_header_lazy from '../../assets/artists/jackie/h2_jackie-lazy.svg'
+
+import jackie_img2 from "../../assets/artists/jackie/jackie_img2.jpg"
+import jackie_img2_lazy from "../../assets/artists/jackie/jackie_img2_lazy.jpg"
+import jackie_img3 from "../../assets/artists/jackie/jackie_img3.jpg"
+import jackie_img3_lazy from "../../assets/artists/jackie/jackie_img3_lazy.jpg"
+import jackie_img4 from "../../assets/artists/jackie/jackie_img4.jpg"
+import jackie_img4_lazy from "../../assets/artists/jackie/jackie_img4_lazy.jpg"
+import jackie_img5 from "../../assets/artists/jackie/jackie_img5.jpg"
+import jackie_img5_lazy from "../../assets/artists/jackie/jackie_img5_lazy.jpg"
+import jackie_img6 from "../../assets/artists/jackie/jackie_img6.jpg"
+import jackie_img6_lazy from "../../assets/artists/jackie/jackie_img6_lazy.jpg"
 //Lucky - переделать макет
-import member_lucky from "../../../public/artists/lucky/lucky.jpg"
-import member_lucky_lazy from "../../../public/artists/lucky/lucky_lazy.jpg"
-import lucky_header from '../../../public/artists/lucky/h2_lucky.svg'
-import lucky_header_lazy from '../../../public/artists/lucky/h2_lucky-lazy.svg'
-import lucky_img1 from "../../../public/artists/lucky/lucky_img1.jpg"
-import lucky_img1_lazy from "../../../public/artists/lucky/lucky_img1_lazy.jpg"
-import lucky_img2 from "../../../public/artists/lucky/lucky_img2.jpg"
-import lucky_img2_lazy from "../../../public/artists/lucky/lucky_img2_lazy.jpg"
-import lucky_img3 from "../../../public/artists/lucky/lucky_img3.jpg"
-import lucky_img3_lazy from "../../../public/artists/lucky/lucky_img3_lazy.jpg"
-import lucky_img4 from "../../../public/artists/lucky/lucky_img4.jpg"
-import lucky_img4_lazy from "../../../public/artists/lucky/lucky_img4_lazy.jpg"
-import lucky_img5 from "../../../public/artists/lucky/lucky_img5.jpg"
-import lucky_img5_lazy from "../../../public/artists/lucky/lucky_img5_lazy.jpg"
-import lucky_img6 from "../../../public/artists/lucky/lucky_img6.jpg"
-import lucky_img6_lazy from "../../../public/artists/lucky/lucky_img6_lazy.jpg"
-import lucky_img7 from "../../../public/artists/lucky/lucky_img7.jpg"
-import lucky_img7_lazy from "../../../public/artists/lucky/lucky_img7_lazy.jpg"
-import lucky_img8 from "../../../public/artists/lucky/lucky_img8.jpg"
-import lucky_img8_lazy from "../../../public/artists/lucky/lucky_img8_lazy.jpg"
+import member_lucky from "../../assets/artists/lucky/lucky.jpg"
+import member_lucky_lazy from "../../assets/artists/lucky/lucky_lazy.jpg"
+import lucky_header from '../../assets/artists/lucky/h2_lucky.svg'
+import lucky_header_lazy from '../../assets/artists/lucky/h2_lucky-lazy.svg'
+import lucky_img1 from "../../assets/artists/lucky/lucky_img1.jpg"
+import lucky_img1_lazy from "../../assets/artists/lucky/lucky_img1_lazy.jpg"
+import lucky_img2 from "../../assets/artists/lucky/lucky_img2.jpg"
+import lucky_img2_lazy from "../../assets/artists/lucky/lucky_img2_lazy.jpg"
+import lucky_img3 from "../../assets/artists/lucky/lucky_img3.jpg"
+import lucky_img3_lazy from "../../assets/artists/lucky/lucky_img3_lazy.jpg"
+import lucky_img4 from "../../assets/artists/lucky/lucky_img4.jpg"
+import lucky_img4_lazy from "../../assets/artists/lucky/lucky_img4_lazy.jpg"
+import lucky_img5 from "../../assets/artists/lucky/lucky_img5.jpg"
+import lucky_img5_lazy from "../../assets/artists/lucky/lucky_img5_lazy.jpg"
+import lucky_img6 from "../../assets/artists/lucky/lucky_img6.jpg"
+import lucky_img6_lazy from "../../assets/artists/lucky/lucky_img6_lazy.jpg"
+import lucky_img7 from "../../assets/artists/lucky/lucky_img7.jpg"
+import lucky_img7_lazy from "../../assets/artists/lucky/lucky_img7_lazy.jpg"
+import lucky_img8 from "../../assets/artists/lucky/lucky_img8.jpg"
+import lucky_img8_lazy from "../../assets/artists/lucky/lucky_img8_lazy.jpg"
 
 //Josh
-import member_josh from "../../../public/artists/josh/josh.jpg"
-import member_josh_lazy from "../../../public/artists/josh/josh_lazy.jpg"
-import team from '../../../public/artists/team/team.jpg'
-import team_lazy from '../../../public/artists/team/team_lazy.jpg'
+import member_josh from "../../assets/artists/josh/josh.jpg"
+import member_josh_lazy from "../../assets/artists/josh/josh_lazy.jpg"
+import team from '../../assets/artists/team/team.jpg'
+import team_lazy from '../../assets/artists/team/team_lazy.jpg'
 
 type NavBar = {
     menuLinks: MenuLinks[]
@@ -194,7 +192,6 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: mike_img1, srcSM: mike_img1_lazy, text: 'neck tattoo' },
                 { id: nanoid(), src: mike_img2, srcSM: mike_img2_lazy, text: 'back tattoo' },
                 { id: nanoid(), src: mike_img3, srcSM: mike_img3_lazy, text: 'full body tattoo' },
                 { id: nanoid(), src: mike_img4, srcSM: mike_img4_lazy, text: 'full body tattoo' },
@@ -222,7 +219,6 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: craig_img1, srcSM: craig_img1_lazy, text: 'neck tattoo' },
                 { id: nanoid(), src: craig_img2, srcSM: craig_img2_lazy, text: 'chest  tattoo' },
                 { id: nanoid(), src: craig_img3, srcSM: craig_img3_lazy, text: 'full body tattoo' },
                 { id: nanoid(), src: craig_img4, srcSM: craig_img4_lazy, text: 'sholder tattoo' },
@@ -247,7 +243,6 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: jackie_img1, srcSM: jackie_img1_lazy, text: 'lip piercing' },
                 { id: nanoid(), src: jackie_img2, srcSM: jackie_img2_lazy, text: 'eyebrow piercing' },
                 { id: nanoid(), src: jackie_img3, srcSM: jackie_img3_lazy, text: 'nose piercing' },
                 { id: nanoid(), src: jackie_img4, srcSM: jackie_img4_lazy, text: 'nose and eyebrow piercing' },
@@ -272,7 +267,6 @@ export const useMembers = create<useMembers>(() => ({
             instagram: "https://www.instagram.com/destintattoocompany/",
             facebook: "https://www.facebook.com/Destintattoocompany/",
             potfolio: [
-                { id: nanoid(), src: lucky_img1, srcSM: lucky_img1_lazy, text: 'back tattoo' },
                 { id: nanoid(), src: lucky_img2, srcSM: lucky_img2_lazy, text: 'full arm tattoo' },
                 { id: nanoid(), src: lucky_img3, srcSM: lucky_img3_lazy, text: 'arm and shoulders tattoo' },
                 { id: nanoid(), src: lucky_img4, srcSM: lucky_img4_lazy, text: 'neck and shoulders tattoo ' },

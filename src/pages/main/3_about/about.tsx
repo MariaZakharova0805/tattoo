@@ -2,8 +2,8 @@ import c from './about.module.css'
 import { Container } from "../../../shared/ui/container/container"
 import { Header_H3 } from "../../../shared/ui/text/text-h3"
 import { TextRegular } from "../../../shared/ui/text/text-regular"
-import opened from "../../../../public/main/opened.svg"
-import opened_lazy from "../../../../public/main/opened-svg_lazy.svg"
+import opened from "../../../assets/main/opened.svg"
+import opened_lazy from "../../../assets/main/opened-svg_lazy.svg"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { motion } from "framer-motion";

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Collapse } from '@mui/material';
 import c from './drop-down-item.module.css'
-import arrow from '../../../public/svg/arrow_red.svg'
+import arrow from '../../assets/svg/arrow_red.svg'
 type DropDownItemProps = {
     header: string,
     text: string

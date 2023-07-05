@@ -2,8 +2,8 @@ import c from './piercing.module.css'
 import { Container } from "../../../shared/ui/container/container"
 import { TextRegular } from "../../../shared/ui/text/text-regular"
 import { ButtonArrow } from '../../../shared/ui/button'
-import piercing_h1 from "../../../../public/main/piercing_h1.svg"
-import piercing_h2 from "../../../../public/main/piercing_h2.svg"
+import piercing_h1 from "../../../assets/main/piercing_h1.svg"
+import piercing_h2 from "../../../assets/main/piercing_h2.svg"
 import { motion } from "framer-motion";
 import { textBottomToTopAnimation } from '../../../shared/animation'
 

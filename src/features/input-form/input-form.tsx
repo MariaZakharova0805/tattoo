@@ -1,7 +1,7 @@
 import { SetStateAction, useEffect, useRef, useState } from 'react'
 import c from './input-form.module.css'
 import { useForm, SubmitHandler } from "react-hook-form"
-import arrow from '../../../public/svg/arrow_red.svg'
+import arrow from '../../assets/svg/arrow_red.svg'
 import TextField from '@mui/material/TextField';
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { useFormData, useContactsFormVisibility } from '../../shared/store'

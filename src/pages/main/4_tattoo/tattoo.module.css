@@ -31,7 +31,7 @@
 }
 
 .block_text {
-    background: right top / contain no-repeat url('../../../../public/main/tattoo_img.jpg');
+    background: right top / contain no-repeat url('../../../assets/main/tattoo_img.jpg');
     padding-top: 120px;
     z-index: 2;
     position: relative;
@@ -70,7 +70,7 @@
     }
 
     .block_text {
-        background: right top / contain no-repeat url('../../../../public/main/tatto768.jpg');
+        background: right top / contain no-repeat url('../../../assets/main/tatto768.jpg');
         width: 80%;
         margin: 0 auto;
         background-size: 85%;
@@ -113,7 +113,7 @@
     }
 
     .block_text {
-        background: left top / 75% no-repeat url('../../../../public/main/tattoo1600.jpg');
+        background: left top / 75% no-repeat url('../../../assets/main/tattoo1600.jpg');
         width: 90%;
         margin-left: 6%;
         max-width: 1600px;

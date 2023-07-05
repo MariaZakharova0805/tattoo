@@ -1,6 +1,6 @@
 import c from './gallery.module.css'
 import { Header_H2 } from "../../shared/ui/text/text-h2"
-import h2 from '../../../public/gallery/h2_gallery.svg'
+import h2 from '../../assets/gallery/h2_gallery.svg'
 import { PageBottom } from "../../widgets/page-footer/page-footer"
 import { TapeBlack } from "../../widgets/tape/tape-black"
 import { useGallery } from '../../shared/store'

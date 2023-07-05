@@ -31,7 +31,7 @@
 }
 
 .block_text {
-    background: right top / contain no-repeat url('../../../../public/main/piercing360.jpg');
+    background: right top / contain no-repeat url('../../../assets/main/piercing360.jpg');
     padding-top: 261px;
     z-index: 2;
     position: relative;
@@ -71,7 +71,7 @@
     }
 
     .block_text {
-        background: left top / contain no-repeat url('../../../../public/main/piercing768.jpg');
+        background: left top / contain no-repeat url('../../../assets/main/piercing768.jpg');
         width: 80%;
         margin: 0 auto;
         background-size: 85%;
@@ -111,7 +111,7 @@
     }
 
     .block_text {
-        background: right top / 75% no-repeat url('../../../../public/main/piercing1600.jpg');
+        background: right top / 75% no-repeat url('../../../assets/main/piercing1600.jpg');
         width: 90%;
         max-width: 1600px;
         padding-top: 380px;

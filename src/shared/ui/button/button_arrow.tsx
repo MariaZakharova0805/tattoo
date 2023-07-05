@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import c from "./button_arrow.module.css"
-import arrow from "../../../../public/svg/arrow_red.svg"
+import arrow from "../../../assets/svg/arrow_red.svg"
 import { Link } from 'react-router-dom'
 
 type ButtonArrowProps = { 

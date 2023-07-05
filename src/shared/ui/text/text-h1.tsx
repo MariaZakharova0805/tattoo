@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import c from "./text.module.css"
-import h1 from '../../../../public/h1.svg'
+import h1 from '../../../assets/h1.svg'
 type Header_H1_Props = {
     children: string,
 }

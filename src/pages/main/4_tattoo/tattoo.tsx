@@ -2,8 +2,8 @@ import c from './tattoo.module.css'
 import { Container } from "../../../shared/ui/container/container"
 import { TextRegular } from "../../../shared/ui/text/text-regular"
 import { ButtonArrow } from '../../../shared/ui/button'
-import svg_tattoo from "../../../../public/main/svg_tatoo.svg"
-import svg_tattoo2 from "../../../../public/main/svg_tatoo2.svg"
+import svg_tattoo from "../../../assets/main/svg_tatoo.svg"
+import svg_tattoo2 from "../../../assets/main/svg_tatoo2.svg"
 import { motion } from "framer-motion";
 import { textBottomToTopAnimation } from '../../../shared/animation'
 

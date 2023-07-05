@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import trinagle from "../../../public/svg/triangle_mainp.svg"
+import trinagle from "../../assets/svg/triangle_mainp.svg"
 import c from "./triangle.module.css"
 import { useTriangleVisible } from "../../shared/store";
 import { motion } from 'framer-motion';

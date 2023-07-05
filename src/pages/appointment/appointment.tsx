@@ -1,6 +1,6 @@
 import c from "./appointment.module.css"
 import { Header_H2 } from "../../shared/ui/text/text-h2"
-import h2 from '../../../public/appointment/h2_book.svg'
+import h2 from '../../assets/appointment/h2_book.svg'
 import { Tape } from "../../widgets/tape"
 import { TextRegular } from "../../shared/ui/text/text-regular"
 import { Container } from "../../shared/ui/container/container"

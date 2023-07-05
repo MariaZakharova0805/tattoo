@@ -4,7 +4,7 @@
 }
 
 .section {
-  background: right bottom 15%/ contain no-repeat url("./../../../../public/main/part3_img_360.jpg");
+  background: right bottom 15%/ contain no-repeat url("./../../../assets/main/part3_img_360.jpg");
   margin-bottom: 120px;
 }
 
@@ -24,7 +24,7 @@
   }
 
   .section {
-    background: right top/ 65% no-repeat url("./../../../../public/main/part3_img_768.jpg");
+    background: right top/ 65% no-repeat url("./../../../assets/main/part3_img_768.jpg");
     margin-bottom: 208px;
   }
 
@@ -46,7 +46,7 @@
   }
 
   .section {
-    background: right top / 70% no-repeat url("./../../../../public/main/part3_img_1600.jpg");
+    background: right top / 70% no-repeat url("./../../../assets/main/part3_img_1600.jpg");
     margin: 0 auto 186px;
     max-width: 1600px;
   }

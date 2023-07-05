@@ -33,7 +33,7 @@
 .hideBlock {
     width: 100%;
     height: 350px;
-    background:url('../../../../public/block.png');
+    background:url('../../../assets/block.png');
     position: absolute;
     top: 0px;
     left: 40px;

@@ -1,9 +1,9 @@
 import c from './contact.module.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import map from '../../../public/contact/Map.jpg'
-import map_lazy from '../../../public/contact/MapSM.jpg'
-import h2 from '../../../public/contact/h2_contacts.svg'
+import map from '../../assets/contact/Map.jpg'
+import map_lazy from '../../assets/contact/MapSM.jpg'
+import h2 from '../../assets/contact/h2_contacts.svg'
 import { Header_H2 } from "../../shared/ui/text/text-h2"
 import { PageBottom } from "../../widgets/page-footer/page-footer"
 import { Container } from '../../shared/ui/container/container'

@@ -1,5 +1,5 @@
-import img from "../../../public/error/main.jpg"
-import img_lazy from "../../../public/error/main_lazy.jpg"
+import img from "../../assets/error/main.jpg"
+import img_lazy from "../../assets/error/main_lazy.jpg"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import c from "./error.module.css"
