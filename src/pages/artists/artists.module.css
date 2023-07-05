@@ -1,9 +1,5 @@
 .section {
     width: 100vw;
-
-}
-
-.block_tape {
     position: relative;
     overflow: hidden;
 }
@@ -16,7 +12,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    margin-bottom: 67px;
 }
 
 .footer {

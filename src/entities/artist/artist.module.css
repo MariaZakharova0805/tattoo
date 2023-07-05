@@ -38,6 +38,10 @@
     color: var(--white);
 }
 
+.content img {
+    width: 100vw;
+}
+
 @media (min-width:768px) {
     .block:nth-child(2n) {
         margin-top: -40px;

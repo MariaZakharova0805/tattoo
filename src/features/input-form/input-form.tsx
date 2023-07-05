@@ -80,6 +80,7 @@ export const InputForm = () => {
                         <TextField
                             color='secondary'
                             label="Your name" variant="standard" placeholder='Emma' {...register("name", { required: true })} />
+                            {errors.email && <span>This field is required</span>}
                     </div>
                     <div className={c.form_item}>
                         <TextField
@@ -91,6 +92,7 @@ export const InputForm = () => {
                         <TextField
                             color='secondary'
                             label="Phone number" variant="standard" placeholder='+1 850 450 53 67' {...register("phone", { required: true })} />
+                            {errors.email && <span>This field is required</span>}
                     </div>
                     {/* Choosing servise */}
                     <div className={c.form_item}>

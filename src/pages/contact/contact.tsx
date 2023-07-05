@@ -10,7 +10,7 @@ import { Container } from '../../shared/ui/container/container'
 import { Link } from '../../shared/ui/link/link'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Header_H3 } from '../../shared/ui/text/text-h3'
-import { Iframe } from '../../widgets/iframe';
+// import { Iframe } from '../../widgets/iframe';
 import { useContacts } from '../../shared/store';
 
 
@@ -51,7 +51,7 @@ export const Contact = () => {
         </div>
       </Container>
       <div className={c.map} onClick={() => changeOpacity()}>
-        <div className={c.map_iframe}><Iframe /></div>
+        {/* <div className={c.map_iframe}><Iframe /></div> */}
         <LazyLoadImage
           alt="map iframe"
           effect="blur"
