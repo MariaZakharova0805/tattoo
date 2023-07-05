@@ -197,7 +197,6 @@ export const useMembers = create<useMembers>(() => ({
                 { id: nanoid(), src: mike_img4, srcSM: mike_img4_lazy, text: 'full body tattoo' },
                 { id: nanoid(), src: mike_img5, srcSM: mike_img5_lazy, text: 'back tattoo' },
                 { id: nanoid(), src: mike_img6, srcSM: mike_img6_lazy, text: 'breast tattoo' },
-
             ]
         },
         {

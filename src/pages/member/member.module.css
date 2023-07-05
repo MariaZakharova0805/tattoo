@@ -1,4 +1,11 @@
-.block {
+
+
+.swiper,
+.header_h3 {
+    margin-bottom: 80px;
+}
+
+/* .block {
     width: 100vw;
 }
 
@@ -80,4 +87,4 @@
     .member {
         margin-bottom: 166px;
     }
-}
+} */
