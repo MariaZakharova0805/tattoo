@@ -1,0 +1,27 @@
+.select_block_item {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    color: var(--grey-dark);
+}
+
+.select_block_item:hover {
+    color: var(--white);
+}
+
+.select_block_item_tag {
+    width: 21.733px;
+    height: 15.5px;
+    background: url('../../assets/svg/tag_grey.svg');
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+.select_block_item:hover .select_block_item_tag {
+    background: url('../../assets/svg/tag_white.svg');
+}

@@ -4,13 +4,21 @@
     width: 100vw;
 }
 
-.header {
-    margin-bottom: 86px;
+.section_header {
+    max-width: 607px;
+    margin: 0 auto 86px;
+}
+
+.form_header {
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .form {
     margin-bottom: 77px;
+
 }
+
 
 /* Shown block after form is filled */
 .block_finish {

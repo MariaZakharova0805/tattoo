@@ -1,7 +1,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 68px;
+    margin-bottom: 168px;
     position: relative;
 }
 
@@ -29,8 +29,6 @@
     padding: 8px 0 16px;
     margin: 0;
 }
-
-
 
 
 /* Button */
@@ -82,6 +80,69 @@
     width: calc(100% - 30px);
 }
 
+.form_item_label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/* Select styles */
+.form_item {
+    position: relative;
+}
+
+.select_block {
+    position: absolute;
+    top: 60px;
+    z-index: 22;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+}
+
+.form_item:hover .select_block * {
+    display: flex;
+}
+
+/* Message textarea styles */
+
+.form_item_label {
+    margin-bottom: 4px;
+}
+
+.form_item_label p {
+    margin-right: 15px;
+}
+
+.pen {
+    cursor: pointer;
+}
+
+.message {
+    height: 0px;
+    min-width: 100%;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-bottom: 1px solid var(--grey-light);
+    resize: none;
+}
+
+.message_active {
+    min-height: 100px;
+    min-width: 100%;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-bottom: 1px solid var(--grey-light);
+    resize: none;
+    color: var(--white);
+}
+
+.message_active:focus {
+    outline: none;
+    border-bottom: 1px solid var(--grey-middle);
+}
+
+
 @media (min-width:768px) {
     .form {
         margin-bottom: 100px;
@@ -89,10 +150,14 @@
         justify-content: space-between;
     }
 
-    .form_right,
     .form_left {
         width: 40%;
     }
+
+    .from_right .form_item {
+        width: 40vw;
+    }
+
 
     .btn_link_text {
         font-size: 22px;
@@ -111,48 +176,4 @@
     .btn_link_text {
         font-size: 32px;
     }
-}
-
-/* Select styles */
-.form_item {
-    position: relative;
-}
-
-.select_block {
-    position: absolute;
-    top: 60px;
-    z-index: 22;
-    background-color: rgb(32, 32, 32);
-    width: 100%;
-}
-
-.select_block_item {
-    padding: 16px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    display: none;
-    transition: 0.5s;
-    color: var(--grey-light);
-}
-
-.select_block_item:hover {
-    color: var(--white);
-}
-
-.select_block_item_tag {
-    width: 21.733px;
-    height: 15.5px;
-    background-image: url('../../../public/svg/tag_grey.svg');
-    transition: 0.5s;
-}
-
-.select_block_item:hover .select_block_item_tag {
-    background-image: url('../../../public/svg/tag_white.svg');
-}
-
-.form_item:hover .select_block_item {
-    display: flex;
 }

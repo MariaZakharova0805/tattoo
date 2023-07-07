@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { nanoid } from 'nanoid'
-import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts, IImage } from './model';
+import { MenuLinks, FooterLinks, FooterText, IImgs, IFeedBack, IMember, IQuestion, IContacts, IImage, SelectItem } from './model';
 import main_img1 from "../../assets/main/img1.jpg"
 import main_img1_lazy from "../../assets/main/img1_lazy.jpg"
 import main_img2 from "../../assets/main/img2.jpg"
@@ -394,3 +394,36 @@ export const useTriangleVisible = create<TriangleVisible>((set) => ({
     },
 }));
 
+
+interface SelectList {
+    services: SelectItem[]
+    serviceItem: string
+    setServiceItem: (item: any) => void
+}
+
+export const useServiceSelectList = create<SelectList>((set) => ({
+    services: [
+        { id: nanoid(), value: 'tattoo' },
+        { id: nanoid(), value: 'piercing' }
+    ],
+    serviceItem: '',
+    setServiceItem: (selectedService) => set(() => ({ serviceItem: selectedService })),
+}));
+
+interface SelectArtistsList {
+    artists: SelectItem[]
+    artistName: string
+    setArtistName: (item: any) => void
+}
+
+
+export const useArtistsSelectList = create<SelectArtistsList>((set) => ({
+    artists: [
+        { id: nanoid(), value: 'MIKE', job: 'tattoo' },
+        { id: nanoid(), value: 'CRAIG', job: 'tattoo' },
+        { id: nanoid(), value: 'LUCKY', job: 'tattoo' },
+        { id: nanoid(), value: 'JACKIE', job: 'piercing' }
+    ],
+    artistName: '',
+    setArtistName: (selectedArtist) => set(() => ({ artistName: selectedArtist })),
+}));

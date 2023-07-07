@@ -73,3 +73,8 @@ export interface IImage {
     imgSM: string,
 }
 
+export interface SelectItem {
+    id: string
+    value: string
+    job?: string
+}
