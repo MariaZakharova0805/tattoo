@@ -13,7 +13,6 @@ import main_img5 from "../../assets/main/img5.jpg"
 import main_img5_lazy from "../../assets/main/img5_lazy.jpg"
 import main_img6 from "../../assets/main/img6.jpg"
 import main_img6_lazy from "../../assets/main/img6_lazy.jpg"
-
 import feedback_img1 from "../../assets/main/feedback_img1.jpg"
 import feedback_img1_lazy from "../../assets/main/feedback_img1_lazy.jpg"
 import feedback_img2 from "../../assets/main/feedback_img2.jpg"
@@ -31,7 +30,6 @@ import member_mike from "../../assets/artists/mike/mike.jpg"
 import member_mike_lazy from "../../assets/artists/mike/mike_lazy.jpg"
 import mike_header from '../../assets/artists/mike/h2_mike.svg'
 import mike_header_lazy from '../../assets/artists/mike/h2_mike-lazy.svg'
-
 import mike_img2 from "../../assets/artists/mike/mike_img2.jpg"
 import mike_img2_lazy from "../../assets/artists/mike/mike_img2_lazy.jpg"
 import mike_img3 from "../../assets/artists/mike/mike_img3.jpg"
@@ -44,13 +42,11 @@ import mike_img6 from "../../assets/artists/mike/mike_img6.jpg"
 import mike_img6_lazy from "../../assets/artists/mike/mike_img6_lazy.jpg"
 import mike_img7 from "../../assets/artists/mike/mike_img7.jpg"
 import mike_img7_lazy from "../../assets/artists/mike/mike_img7_lazy.jpg"
-
 // Craig +
 import member_craig from "../../assets/artists/craig/craig.jpg"
 import member_craig_lazy from "../../assets/artists/craig/craig_lazy.jpg"
 import craig_header from '../../assets/artists/craig/h2_craig.svg'
 import craig_header_lazy from '../../assets/artists/craig/h2_craig-lazy.svg'
-
 import craig_img2 from "../../assets/artists/craig/craig_img2.jpg"
 import craig_img2_lazy from "../../assets/artists/craig/craig_img2_lazy.jpg"
 import craig_img3 from "../../assets/artists/craig/craig_img3.jpg"
@@ -65,13 +61,11 @@ import craig_img7 from "../../assets/artists/craig/craig_img7.jpg"
 import craig_img7_lazy from "../../assets/artists/craig/craig_img7_lazy.jpg"
 import craig_img8 from "../../assets/artists/craig/craig_img8.jpg"
 import craig_img8_lazy from "../../assets/artists/craig/craig_img8_lazy.jpg"
-
 //Jackie
 import member_jackie from "../../assets/artists/jackie/jackie.jpg"
 import member_jackie_lazy from "../../assets/artists/jackie/jackie_lazy.jpg"
 import jackie_header from '../../assets/artists/jackie/h2_jackie.svg'
 import jackie_header_lazy from '../../assets/artists/jackie/h2_jackie-lazy.svg'
-
 import jackie_img2 from "../../assets/artists/jackie/jackie_img2.jpg"
 import jackie_img2_lazy from "../../assets/artists/jackie/jackie_img2_lazy.jpg"
 import jackie_img3 from "../../assets/artists/jackie/jackie_img3.jpg"
@@ -103,7 +97,6 @@ import lucky_img7 from "../../assets/artists/lucky/lucky_img7.jpg"
 import lucky_img7_lazy from "../../assets/artists/lucky/lucky_img7_lazy.jpg"
 import lucky_img8 from "../../assets/artists/lucky/lucky_img8.jpg"
 import lucky_img8_lazy from "../../assets/artists/lucky/lucky_img8_lazy.jpg"
-
 //Josh
 import member_josh from "../../assets/artists/josh/josh.jpg"
 import member_josh_lazy from "../../assets/artists/josh/josh_lazy.jpg"
@@ -131,7 +124,7 @@ type Footer = {
 export const useFooter = create<Footer>(() => ({
     footerLinks: [
         { id: nanoid(), text1: '409 HARBOUR BOULEVARD , DESTIN, FL, USA', link1: 'https://goo.gl/maps/Kzijm1wQke7bW5sp9', text2: 'View on map', link2: 'https://goo.gl/maps/Kzijm1wQke7bW5sp9' },
-        { id: nanoid(), text1: '+1 850-460-8484 , Destin, FL, USA', link1: 'tel:18504608484', text2: 'destintattoocompany@gmail.com', link2: 'mailto:destintattoocompany@gmail.com' },
+        { id: nanoid(), text1: '+1 850-460-8484', link1: 'tel:18504608484', text2: 'destintattoocompany@gmail.com', link2: 'mailto:destintattoocompany@gmail.com' },
         { id: nanoid(), text1: 'Instagram', link1: 'https://www.instagram.com/destintattoocompany/', text2: 'Facebook', link2: 'https://www.facebook.com/Destintattoocompany/' },
     ],
     footerText: [
