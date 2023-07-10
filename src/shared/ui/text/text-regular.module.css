@@ -1,0 +1,31 @@
+.text_regular,
+.text_regular_grey {
+    font-size: 16px;
+    line-height: 20.8px;
+    color: var(--white);
+    margin-bottom: 16px;
+    padding: 0;
+    font-weight: 300;
+
+}
+
+.text_regular::first-letter,
+.text_regular_grey::first-letter {
+    text-transform: uppercase;
+}
+
+.text_regular_grey {
+    color: var(--grey-light);
+}
+
+.text_regular:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width:1600px) {
+    .text_regular,
+    .text_regular_grey {
+        font-size: 18px;
+        line-height: 26.96px;
+    }
+}

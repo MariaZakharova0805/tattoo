@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import c from "./text.module.css"
+import c from "./text-h2.module.css"
 type Header_H2_Props = {
     src: string | undefined,
     alt: string,

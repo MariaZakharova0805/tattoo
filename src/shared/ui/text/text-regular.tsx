@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import c from "./text.module.css"
+import c from "./text-regular.module.css"
 
 type TextProps = {
     children: any,

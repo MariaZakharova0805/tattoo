@@ -3,8 +3,8 @@ import { useMembers } from "../../shared/store"
 import { Artist } from "../../entities/artist"
 import { Container } from "../../shared/ui/container/container"
 import h2 from '../../assets/artists/h2_artists.svg'
-import { Header_H2 } from '../../shared/ui/text/text-h2'
-import { HeaderThin } from "../../shared/ui/text/text-header-thin"
+import { Header_H2 } from '../../shared/ui/h2/text-h2'
+import { HeaderThin } from "../../shared/ui/header-thin/text-header-thin"
 import { Tape } from '../../widgets/tape'
 import { PageBottom } from '../../widgets/page-footer'
 

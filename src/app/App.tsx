@@ -7,12 +7,11 @@ import { Outlet } from "react-router-dom";
 import { Footer } from '../widgets/footer';
 import { NavbarDropDown } from '../widgets/navbar-drop-down/navbar-drop-down';
 import { NavbarHeader } from '../widgets/navbar-header/navbar-header';
-import { Burger } from '../entities/burger';
-import { Logo } from '../entities/logo';
+import { Burger } from '../widgets/burger';
+import { Logo } from '../widgets/logo';
 import { ThemeProvider } from '@mui/material/styles';
 import { darkTheme } from './style/theme';
 type Anchor = 'top';
-
 
 function App() {
   const [state, setState] = React.useState({

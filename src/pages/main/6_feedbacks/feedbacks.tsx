@@ -1,7 +1,7 @@
 import c from "./feedbacks.module.css"
 import { Container } from '../../../shared/ui/container/container'
 import { useFeedBacks } from '../../../shared/store'
-import { Feedback } from "../../../entities/feedback/feedback"
+import { Feedback } from "../../../entities/feedback-item/feedback-item"
 import { Tape } from "../../../widgets/tape/tape"
 
 export const Feedbacks = () => {

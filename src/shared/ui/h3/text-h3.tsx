@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import c from "./text.module.css"
+import c from "./text-h3.module.css"
 type Header_H3_Props = {
     children: string | string[],
     color?: 'white' | 'red',

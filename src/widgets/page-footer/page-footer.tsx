@@ -1,7 +1,7 @@
 import { Container } from '../../shared/ui/container/container'
 import { ButtonArrow } from '../../shared/ui/button'
-import { Header_H3 } from '../../shared/ui/text/text-h3'
-import { HeaderThin } from '../../shared/ui/text/text-header-thin'
+import { Header_H3 } from '../../shared/ui/h3/text-h3'
+import { HeaderThin } from '../../shared/ui/header-thin/text-header-thin'
 import c from './page-footer.module.css'
 
 export const PageBottom = () => {

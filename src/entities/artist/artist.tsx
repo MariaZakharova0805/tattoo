@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import c from './artist.module.css'
 import { IMember } from '../../shared/store'
-import { Header_H3 } from '../../shared/ui/text/text-h3'
+import { Header_H3 } from '../../shared/ui/h3/text-h3'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { ButtonArrow } from '../../shared/ui/button'
 import { LazyLoadImage } from 'react-lazy-load-image-component';

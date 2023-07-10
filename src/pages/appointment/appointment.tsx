@@ -1,15 +1,14 @@
 import c from "./appointment.module.css"
-import { Header_H2 } from "../../shared/ui/text/text-h2"
+import { Header_H2 } from "../../shared/ui/h2/text-h2"
 import h2 from '../../assets/appointment/h2_book.svg'
 import { Tape } from "../../widgets/tape"
 import { TextRegular } from "../../shared/ui/text/text-regular"
 import { Container } from "../../shared/ui/container/container"
 import { InputForm } from "../../features/input-form"
-import { Header_H3 } from "../../shared/ui/text/text-h3"
+import { Header_H3 } from "../../shared/ui/h3/text-h3"
 import { useContactsFormVisibility } from "../../shared/store"
 export const Appointment = () => {
   const formVisible = useContactsFormVisibility(state => state.formVisible)
-
   return (
     <section className={c.section}>
       <Container>

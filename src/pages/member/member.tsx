@@ -2,11 +2,11 @@ import { useParams } from "react-router";
 import c from "./member.module.css"
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useMembers } from '../../shared/store';
-import { Header_H2 } from "../../shared/ui/text/text-h2"
+import { Header_H2 } from "../../shared/ui/h2/text-h2"
 import { Container } from "../../shared/ui/container/container";
-import { Header_H3 } from "../../shared/ui/text/text-h3";
+import { Header_H3 } from "../../shared/ui/h3/text-h3";
 import { PageBottom } from "../../widgets/page-footer/page-footer";
-import { SwiperItem } from "../../entities/swiper";
+import { SwiperItem } from "../../features/swiper";
 import { MemberText } from "../../entities/member-about-item";
 export const Member = () => {
     const { name } = useParams();

@@ -1,13 +1,13 @@
 import c from './faq.module.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Header_H2 } from "../../shared/ui/text/text-h2"
+import { Header_H2 } from "../../shared/ui/h2/text-h2"
 import h2 from '../../assets/faq/h2_faq.svg'
 import img from '../../assets/faq/img.jpg'
 import img_lazy from '../../assets/faq/img_lazy.jpg'
 import { PageBottom } from "../../widgets/page-footer/page-footer"
 import { TapeBlack } from "../../widgets/tape/tape-black"
-import { HeaderThin } from '../../shared/ui/text/text-header-thin'
+import { HeaderThin } from '../../shared/ui/header-thin/text-header-thin'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import { Container } from '../../shared/ui/container/container'
 import { useFaq } from '../../shared/store'

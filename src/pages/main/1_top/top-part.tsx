@@ -1,9 +1,9 @@
 import c from './top-part.module.css'
 import { Container } from "../../../shared/ui/container/container"
-import { Header_H1 } from '../../../shared/ui/text/text-h1'
+import { Header_H1 } from '../../../widgets/header-h1/text-h1'
 import { motion } from "framer-motion";
 import { HideBlock } from '../../../shared/animation';
-import { Triangle } from "../../../entities/triangle/triangle";
+import { Triangle } from "../../../widgets/triangle/triangle";
 
 export const TopPart = () => {
     return (
@@ -13,7 +13,7 @@ export const TopPart = () => {
             viewport={{ once: true, amount: 0.1 }}
             className={c.section}>
             <Container>
-                <Header_H1>Destin Tattoo</Header_H1>
+                <Header_H1/>
                 <motion.div variants={HideBlock} className={c.hideBlock} style={{ transform: "skew(15deg, 15deg)" }}>
                 </motion.div>
                 <div className={c.top_h3}>Tattoos & Pircings</div>

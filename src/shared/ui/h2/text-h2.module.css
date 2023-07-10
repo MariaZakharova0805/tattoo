@@ -1,0 +1,19 @@
+.h2_img {
+    width: 100%;
+    max-height: 50px;
+    width: auto; 
+    margin: 0 auto 28px;
+}
+
+@media (min-width:768px) {
+    .h2_img {
+        max-height: 90px;
+        margin: 0 auto 54px;
+    }
+}
+
+@media (min-width:1600px) {
+    .h2_img {
+        max-height: 134px;
+    }
+}

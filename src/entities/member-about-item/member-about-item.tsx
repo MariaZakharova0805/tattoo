@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { IMember } from '../../shared/store'
 import { Link } from '../../shared/ui/link/link'
-import { Header_H3 } from '../../shared/ui/text/text-h3'
+import { Header_H3 } from '../../shared/ui/h3/text-h3'
 import { TextRegular } from '../../shared/ui/text/text-regular'
 import c from './member-about-item.module.css'
 
@@ -17,7 +17,6 @@ export const MemberText: FC<MemberTextProp> = ({ member }) => {
                 <Header_H3>{member.name}</Header_H3>
                 <TextRegular>{member.job}</TextRegular>
             </div>
-
             <div className={c.block_style}>
                 Style:
                 <TextRegular color="grey">{member.style.map(item => {
@@ -35,13 +34,12 @@ export const MemberText: FC<MemberTextProp> = ({ member }) => {
                 <Link href={member.facebook}>Facebook</Link>
             </div>
             <div className={c.block_img}>
-            <LazyLoadImage
-                alt={member.name}
-                effect="blur"
-                src={member.src}
-                placeholderSrc={member.srcSM}
-                
-            /></div>
+                <LazyLoadImage
+                    alt={member.name}
+                    effect="blur"
+                    src={member.src}
+                    placeholderSrc={member.srcSM}
+                /></div>
         </div>
     )
 }

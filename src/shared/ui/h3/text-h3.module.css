@@ -1,0 +1,25 @@
+.h3_red,
+.h3_white {
+    font-family: Impact;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: var(--grey-light);
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+    .h3_red,
+    .h3_white {
+        font-size: 36px;
+        line-height: 50.4px;
+    }
+}
+
+@media (min-width:1600px) {
+    .h3_red,
+    .h3_white {
+        font-size: 48px;
+        line-height: 67.2px;
+    }
+}

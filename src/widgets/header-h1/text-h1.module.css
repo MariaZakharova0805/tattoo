@@ -1,0 +1,23 @@
+.h1_img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+@media (min-width:768px) {
+    .h1_img {
+        max-width: 589px;
+    }
+
+
+}
+
+@media (min-width:1600px) {
+    .h1_img {
+        max-width: 1148px;
+    }
+
+}

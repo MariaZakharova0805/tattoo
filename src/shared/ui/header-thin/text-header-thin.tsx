@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import c from "./text.module.css"
+import c from "./text-header-thin.module.css"
 type HeaderThinProps = {
     children: string
 }

@@ -31,14 +31,28 @@
 }
 
 .hideBlock {
-    width: 100%;
+    width: 1600px;
     height: 350px;
-    background:url('../../../assets/block.png');
+    background: url('../../../assets/hide-block/hidden_block.png');
+    background-repeat: no-repeat;
     position: absolute;
     top: 0px;
-    left: 40px;
+    left: -400px;
     z-index: 9;
 }
+
+@media (min-width: 360px) {
+    .hideBlock {
+        height: 280px;
+    }
+}
+
+@media (min-width: 576px) {
+    .hideBlock {
+        height: 230px;
+    }
+}
+
 
 @media (min-width: 768px) {
     .top_h1 {
@@ -59,7 +73,8 @@
     }
 
     .hideBlock {
-        height: 350px;
+        height: 340px;
+        width: 2000px;
     }
 }
 
@@ -69,7 +84,7 @@
     }
 
     .top_h3 {
-        font-size: 48 px;
+        font-size: 48px;
         margin-bottom: 40px;
     }
 
@@ -77,11 +92,12 @@
         font-size: 22px;
         line-height: 30.8px;
         width: 623px;
-        margin-bottom: 64px;
+        margin-bottom: 68px;
     }
 
     .hideBlock {
-        height: 455px;
+        left: -200px;
+        height: 460px;
     }
 
 }

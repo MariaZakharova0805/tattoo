@@ -1,25 +1,23 @@
 import c from './contact.module.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import map from '../../assets/contact/Map.jpg'
-import map_lazy from '../../assets/contact/MapSM.jpg'
+import { useContacts } from '../../shared/store';
 import h2 from '../../assets/contact/h2_contacts.svg'
-import { Header_H2 } from "../../shared/ui/text/text-h2"
-import { PageBottom } from "../../widgets/page-footer/page-footer"
+import { Header_H2 } from "../../shared/ui/h2/text-h2"
 import { Container } from '../../shared/ui/container/container'
 import { Link } from '../../shared/ui/link/link'
 import { TextRegular } from '../../shared/ui/text/text-regular'
-import { Header_H3 } from '../../shared/ui/text/text-h3'
+import { Header_H3 } from '../../shared/ui/h3/text-h3'
 // import { Iframe } from '../../widgets/iframe';
-import { useContacts } from '../../shared/store';
-
+import map from '../../assets/contact/Map.jpg'
+import map_lazy from '../../assets/contact/MapSM.jpg'
+import { PageBottom } from "../../widgets/page-footer/page-footer"
 
 export const Contact = () => {
   const { contactLinks, socialLinks } = useContacts(state => state)
   function changeOpacity() {
     console.log(1)
   }
-
   return (
     <section className={c.section}>
       <Container>

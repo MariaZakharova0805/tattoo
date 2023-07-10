@@ -8,47 +8,16 @@ import { useFormData, useContactsFormVisibility, useServiceSelectList, useArtist
 import emailjs from "@emailjs/browser";
 import { SelectItem } from '../../entities/select-item';
 import pen from '../../assets/svg/pen.svg'
-
-type Inputs = {
-    name: string
-    email: string
-    phone: number | string
-    service: string
-    artist: string
-    message: string
-    picture: any
-}
-const empty = {
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    artist: "",
-    message: "",
-    picture: "",
-};
-
+import { Inputs } from './model';
+import { empty } from './const';
 
 export const InputForm = () => {
-
+    const form = useRef();
     const [texteraeClassName, setTexteraeClassName] = useState(c.message);
-    const openTextarea = () => {
-        setTexteraeClassName(c.message_active)
-    }
-
-
     const { services, serviceItem, setServiceItem } = useServiceSelectList(state => state)
     const { artists, artistName, setArtistName } = useArtistsSelectList(state => state)
-    const chooseValue = (value: SetStateAction<string>) => {
-        setServiceItem(value)
-    }
-    const chooseArtistName = (value: SetStateAction<string>) => {
-        setArtistName(value)
-    }
-
     const setFormData = useFormData(state => state.setFormData)
     const setFormVisible = useContactsFormVisibility(state => state.setFormVisible)
-    const form = useRef();
     const {
         register,
         handleSubmit,
@@ -58,6 +27,15 @@ export const InputForm = () => {
         formState: { errors },
     } = useForm<Inputs>()
 
+    const openTextarea = () => {
+        setTexteraeClassName(c.message_active)
+    }
+    const chooseValue = (value: SetStateAction<string>) => {
+        setServiceItem(value)
+    }
+    const chooseArtistName = (value: SetStateAction<string>) => {
+        setArtistName(value)
+    }
     const onSubmit: SubmitHandler<Inputs> = () => {
         //@ts-ignore
         emailjs.sendForm('service_44a78ff', 'template_x2d7ms9', form.current, 'svtDnQJmJRG1o8S87')
@@ -105,7 +83,6 @@ export const InputForm = () => {
                             label="Phone number" variant="standard" placeholder='+1 850 450 53 67' {...register("phone", { required: true })} />
                         {errors.phone && <span>This field is required</span>}
                     </div>
-                    {/* Choosing servise */}
                     <div className={c.form_item}>
                         <TextField
                             value={serviceItem}
