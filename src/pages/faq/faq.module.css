@@ -18,6 +18,11 @@
 .question,
 .img {
     margin-bottom: 168px;
+
+}
+
+.img img {
+    width: 100vw;
 }
 
 .tape {
@@ -33,5 +38,10 @@
 @media (min-width:768px) {
     .tape {
         margin: 140px 0 -100px;
+    }
+
+    .img {
+        max-width: 1600px;
+        margin: 0 auto 168px;
     }
 }

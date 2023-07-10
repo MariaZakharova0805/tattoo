@@ -32,14 +32,14 @@ export const Faq = () => {
           })}
         </div>
       </Container>
-      <LazyLoadImage
-        alt="tatto"
-        effect="blur"
-        src={img}
-        visibleByDefault={img === '../../../public/faq/img_lazy.jpg'}
-        placeholderSrc={img_lazy}
-        className={c.img}
-      />
+      <div className={c.img}>
+        <LazyLoadImage
+          alt="tatto"
+          effect="blur"
+          src={img}
+          visibleByDefault={img === '../../../public/faq/img_lazy.jpg'}
+          placeholderSrc={img_lazy}
+        /></div>
       <PageBottom />
     </section>
   )
